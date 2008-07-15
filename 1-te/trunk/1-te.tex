@@ -1,0 +1,30 @@
+\documentclass{n-te}
+\usepackage{ngerman,wasysym}
+\nedition{1}{WS 2008/2009}
+
+%% Trennregeln
+\hyphenation{AStA}
+\hyphenation{Mit-be-wohnerIn-nen}
+\hyphenation{Pro-fessorInnen}
+\hyphenation{erwischt}
+\hyphenation{viiieel}
+\hyphenation{y-Nummer}
+\hyphenation{Uniaccount}
+
+\begin{document}
+  \naddpage           %% Titelbild
+  \input{artikel/impressum}
+
+  \vspace{3.5cm}
+  \begin{figure}[h]
+    \centering\includegraphics[width = 2.08\linewidth]{bilder/dilbert.png}
+  \end{figure}
+  
+  \newpage
+  \ntoc %% Inhaltsverzeichnis
+  \clearpage
+
+  \include{artikel/thisAndThat}
+
+\end{document}
+

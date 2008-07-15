@@ -1,0 +1,105 @@
+%% This file provides commands to assist in
+%% layout off the n-te
+%% As a general rule the commands should begin with
+%% 'n' as to not conflict with other commands.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{n-te}
+
+\usepackage[pdftex]{color,graphicx}
+\usepackage[right]{eurosym}
+
+%% Internal variables for storing
+\newcommand\@ntecount{}  %% index
+\newcommand\@nteterm{}   %% term
+
+%% Add 1 to current pagenumber.
+%% IMPORTANT: Affects the current page,
+%% not just the following ones.
+\newcommand{\naddpage}[0]{\stepcounter{page}}
+
+%% Handle the display of the author of the
+%% Article.
+%% 1 Author's name
+\newcommand{\nauthor}[1]
+{
+  \begin{flushright}
+  \bfseries\small#1
+  \end{flushright}
+}
+
+%% Handle the display of the author of the
+%% Article.
+%% 1 Author's name
+%% 2 Author's email address.
+\newcommand{\nauthormail}[2]{
+  \begin{flushright}
+  {\bfseries\small#1}\\
+  \texttt{\small#2}
+  \end{flushright}
+}
+
+%% Set the edition of the n-te
+%% Adjusts the headings for the TOC and the page heads
+%% 1 the number of the n-te (just the number!)
+%% 2 the term of the n-te
+\newcommand\nedition[2]{
+	\renewcommand\@ntecount{#1}  %% store number
+	\renewcommand\@nteterm{#2}  %% store term
+	\markboth{Die \@ntecount{-ste}}{\@nteterm}  % set page heads
+	\renewcommand\contentsname{\@ntecount{-ste} im "Uberblick}  % set toc heading
+}
+
+\newcommand{\nframe}[1]{
+  \begin{figure}[hb]
+    \fbox{\parbox{0.97\linewidth}{#1}}
+  \end{figure}
+}
+
+%% Meta-information that assist in the
+%% structure of the TOC
+%% Use it at the point in the text that
+%% the new section starts
+\newcommand{\nmetatoc}[1]{
+  \addtocontents{toc}{
+    {\large\bfseries#1}
+  }
+}
+
+\newcommand{\npicture}[2]{
+  \begin{figure}[hb]
+    \fbox{\includegraphics[width=0.97\linewidth]{#1}}
+    \caption{#2}
+  \end{figure}
+}
+
+%% Prints a formatted n-te
+\newcommand\nte{\textbf{\textit{n}-te}}
+\newcommand\nten{\textbf{\textit{n}-ten}}
+
+%% Generate the table of contents
+\newcommand{\ntoc}{\tableofcontents}
+
+%% URLs
+\newcommand{\nurl}[1]{%
+  \texttt{#1}%
+}
+
+\newcommand{\nurlfootnote}[1]{%
+  \footnote{\texttt{#1}}%
+}
+
+
+%% Emphasize questions in interviews
+\newcommand{\nquestion}[1]{
+  \textit{#1}
+}
+
+%%
+\newcommand{\nroom}[1]{\textbf{#1}}
+
+%% Change the name of the "abstract" environment
+\renewcommand{\abstractname}{Editorial}
+
+\endinput
+%%
+%% End of file `n-te.sty'.
