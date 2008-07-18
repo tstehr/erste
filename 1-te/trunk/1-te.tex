@@ -1,7 +1,11 @@
-\documentclass{n-te}
+\documentclass[12pt]{n-te}
 
-\usepackage{hyperref}
+\usepackage{dblfloatfix}
+\usepackage[pdftitle={Erstsemesterzeitung der Fachgruppe Informatik WS08/09},pdfauthor={Fachgruppe Informatik}]{hyperref}
+%\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
 \usepackage{ngerman}
+\usepackage{pdfpages}
 \usepackage{units}
 \usepackage{wasysym}
 
@@ -17,20 +21,21 @@
 \hyphenation{Uniaccount}
 
 \begin{document}
-  \naddpage           %% Titelbild
-  \input{artikel/impressum}
-
-  \vspace{3.5cm}
-  \begin{figure}[h]
-    \centering\includegraphics[width = 2.08\linewidth]{bilder/dilbert.png}
-  \end{figure}
-  
+  \input{texte/titelblatt}
+  \setcounter{page}{1}
+  \input{texte/vorwort}
   \newpage
   \ntoc %% Inhaltsverzeichnis
   \clearpage
 
-  \include{artikel/thisAndThat}
-  \include{artikel/ersticheckliste}
+  \include{texte/termine}
+  \include{texte/gruppen}
+  \include{texte/studienplan}
+  \include{texte/menschen}
+  \include{texte/erstitodo}
+  \include{texte/computer}
+  \include{texte/freizeit}
+  \include{texte/nuetzliches}
 
 \end{document}
 

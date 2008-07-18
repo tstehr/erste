@@ -36,7 +36,7 @@
 %% Gliederungen in Inhaltsverzeichnis bis 1 (nur section)
 %%
 \setcounter{secnumdepth}{0}
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 
 %% Befehl überschreiben: section
 %% 
