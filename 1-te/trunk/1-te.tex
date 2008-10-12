@@ -24,12 +24,12 @@
 \begin{document}
   \input{texte/titelblatt}
 
+  \setcounter{page}{1}
   \begin{figure*}[t]
-    \includegraphics[width=0.75\textwidth]{bilder/lageplan.png}
+    \includegraphics[height=\textheight]{bilder/lageplan.png}
   \end{figure*}
   \clearpage
 
-  \setcounter{page}{1}
   \input{texte/vorwort}
   \newpage
   \ntoc %% Inhaltsverzeichnis
@@ -43,6 +43,7 @@
   \include{texte/computer}
   \include{texte/freizeit}
   \include{texte/nuetzliches}
+  \includegraphics[angle=90, width=\textwidth]{stundenplan.pdf}
 
 \end{document}
 
