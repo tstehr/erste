@@ -9,6 +9,8 @@ Damit ihr auch ein paar Gesichter zuordnen k"onnt - gerade wenn ihr eventuell se
 
 \onecolumn
 
+\captionsetup[subfloat]{singlelinecheck=off}
+\captionsetup[subfloat]{justification=raggedright}
 \captionsetup[subfloat]{labelformat=empty}
 
 % \begin{figure}[h]
@@ -17,17 +19,20 @@ Damit ihr auch ein paar Gesichter zuordnen k"onnt - gerade wenn ihr eventuell se
 %   \subfloat[Hella 2]{\includegraphics[width=0.45\linewidth]{bilder/tutoren/hella}}
 % \end{figure}
 
-\begin{figure}[h]
-  \subfloat[Hella\newline 3.Semester\newline h-f.hoffmann@tu-bs.de]{\includegraphics[width=0.21\linewidth]{bilder/tutoren/hella}}
-  \hfill
-  \subfloat[xyz\newline 40.Semester\newline xyz@tu-bs.de]{\includegraphics[width=0.21\linewidth]{bilder/tutoren/hella}}
-  \hfill
-  \subfloat[Dominik\newline 3.Semester.\newline ??@??.??]{\includegraphics[width=0.21\linewidth]{bilder/tutoren/dominik}}
-  \caption*{Tutoren}
-\end{figure}
-
-[Bilder einf"ugen (evtl mit Name und E-mail-adresse??)]
-
-\captionsetup[subfloat]{labelformat=parens}
+\npicture[0.3\linewidth]
+{bilder/tutoren/hella}
+{Hella\\3. Semester\\h-f.hoffmann@tu-bs.de}
+\hfill
+\npicture[0.3\linewidth]
+{bilder/tutoren/winnie}
+{Winnie\\3. Semester\\ ~ }
+\hfill
+\npicture[0.3\linewidth]
+{bilder/tutoren/dominik}
+{Dominik\\3. Semester\\??@??.??}
+\par \ \par
+\npicture[0.3\linewidth]
+{bilder/tutoren/hella}
+{Hella\\2. Semester\\h-f.hoffmann@tu-bs.de}
 
 \twocolumn

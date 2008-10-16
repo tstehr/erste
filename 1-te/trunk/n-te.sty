@@ -67,12 +67,24 @@
   }
 }
 
-\newcommand{\npicture}[2]{
-  \begin{figure}[hb]
-    \fbox{\includegraphics[width=0.97\linewidth]{#1}}
-    \caption{#2}
-  \end{figure}
+%% \npicture[width][relpicwidth]{pic}{caption}
+\long\def\npicture@[#1][#2]#3#4{%
+  \parbox{#1} {
+    \includegraphics[width=#2\linewidth]{{#3}}\\
+    \parbox{\linewidth}{\small #4}
+  }
 }
+
+\newcommand{\npicture}{%
+	\optparams{\npicture@}{[\textwidth][0.7]}%
+}
+
+%\newcommand{\npicture}{
+%   \begin{figure}[hb]
+%     \fbox{\includegraphics[width=0.97\linewidth]{#1}}
+%     \caption{#2}
+%   \end{figure}
+%}
 
 %% Prints a formatted n-te
 \newcommand\nte{\textbf{\textit{n}-te}}
