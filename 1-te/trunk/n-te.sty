@@ -5,9 +5,15 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{n-te}
 
+\usepackage{
+  dblfloatfix,
+  ngerman,
+  optparams,
+  url
+}
+
 \usepackage[pdftex]{color,graphicx}
 \usepackage[right]{eurosym}
-\usepackage{url}
 
 %% \renewcommand{\dbltopfraction}{0.9}
 %% Internal variables for storing
@@ -49,6 +55,11 @@
 	\renewcommand\@nteterm{#2}  %% store term
 	\markboth{Die \@ntecount{-ste}}{\@nteterm}  % set page heads
 	\renewcommand\contentsname{\@ntecount{-ste} im "Uberblick}  % set toc heading
+	
+	\usepackage[
+	pdftitle={Erstsemesterzeitung der Fachgruppe Informatik \@nteterm},
+	pdfauthor={Fachgruppe Informatik}
+	]{hyperref}
 }
 
 \newcommand{\nframe}[1]{
