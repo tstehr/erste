@@ -6,7 +6,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
@@ -40,11 +39,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="358.30272"
-     inkscape:cy="574.55296"
+     inkscape:zoom="1.4"
+     inkscape:cx="355.60818"
+     inkscape:cy="809.52469"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="954"
      inkscape:window-height="719"
@@ -62,26 +61,11 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Ebene 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     style="display:none"
-     sodipodi:insensitive="true">
-    <image
-       y="0.10526384"
-       x="0.51062012"
-       id="image2392"
-       height="1051.2271"
-       width="743.17078"
-       sodipodi:absref="/home/winnie/workspace/n-te/1-te/trunk/bilder/gremienkunde.png.png"
-       xlink:href="gremienkunde.png.png" />
-  </g>
-  <g
      inkscape:groupmode="layer"
      id="layer2"
      style="display:inline">
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 548.51283,340.20464 L 555.83644,344.24525 C 610.61221,310.53996 630.90574,274.96527 628.27471,241.87577 C 622.01841,163.19272 483.66987,99.13217 353.30085,111.78389 L 346.22979,78.322589 L 288.01974,118.85496 L 361.38207,151.17984 L 354.68981,117.59227 C 599.60971,107.44866 694.01689,261.95991 548.51283,340.20464 z"
        id="path2416"
        sodipodi:nodetypes="ccscccccc" />
@@ -274,7 +258,7 @@
      style="display:inline">
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="352.85715"
        y="387.71933"
        id="text3252"
@@ -293,7 +277,7 @@
          id="tspan3258" /></text>
     <text
        xml:space="preserve"
-       style="font-size:12;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans Bold"
        x="466.42856"
        y="453.07648"
        id="text3306"
@@ -308,7 +292,7 @@
          id="tspan3310">der TU BS</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="311.78571"
        y="569.50507"
        id="text3350"
@@ -323,7 +307,7 @@
          id="tspan3354">je FS</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="348.21429"
        y="650.57648"
        id="text3356"
@@ -338,7 +322,7 @@
          id="tspan3360">je FG</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="248.57143"
        y="620.57648"
        id="text3394"
@@ -376,7 +360,7 @@
          id="tspan3348" /></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="192.85715"
        y="529.505"
        id="text3362"
@@ -399,7 +383,7 @@
          id="tspan3370">ter</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="233.21428"
        y="690.57648"
        id="text3378"
@@ -410,11 +394,11 @@
          y="690.57648">Fachgruppenrat (FGR)</tspan><tspan
          sodipodi:role="line"
          x="233.21428"
-         y="702.07697"
+         y="701.82648"
          id="tspan3382">Mathematik [8]</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="369.25229"
        y="691.05164"
        id="text3384"
@@ -425,11 +409,11 @@
          y="691.05164">Fachgruppenrat (FGR)</tspan><tspan
          sodipodi:role="line"
          x="369.25229"
-         y="702.55212"
+         y="702.30164"
          id="tspan3390">Informatik [8]</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="486.60715"
        y="195.04076"
        id="text3198"
@@ -440,7 +424,7 @@
          id="tspan3202">Referate [2]</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="500.53061"
        y="219.36514"
        id="text3210"
@@ -451,7 +435,7 @@
          y="219.36514">benennt</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="490.17651"
        y="246.51299"
        id="text3226"
@@ -462,7 +446,7 @@
          y="246.51299">AstA [3]</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="485.88339"
        y="285.15134"
        id="text3230"
@@ -473,7 +457,7 @@
          y="285.15134">ÜgWA [4]</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="473.21426"
        y="316.64789"
        id="text3237"
@@ -484,7 +468,7 @@
          y="316.64789">Ausschüsse [5]</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="473.21426"
        y="347.18362"
        id="text3243"
@@ -495,7 +479,7 @@
          y="347.18362">Präsidium [6]</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="351.42859"
        y="277.00504"
        id="text3284"
@@ -510,7 +494,7 @@
          id="tspan3288">(SP/StuPa)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="363.57141"
        y="225.57648"
        id="text3290"
@@ -521,7 +505,7 @@
          y="225.57648">bestätigt</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="423.21429"
        y="266.64792"
        id="text3294"
@@ -548,7 +532,7 @@
          id="tspan3304">t</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="563.6651"
        y="134.6386"
        id="text3214"
@@ -563,7 +547,7 @@
          id="tspan3218" /></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="560.12964"
        y="146.25536"
        id="text3220"
@@ -574,7 +558,7 @@
          y="146.25536">Semester</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
        x="458.57144"
        y="782.36218"
        id="text3404"
@@ -585,15 +569,15 @@
          y="782.36218">© by claudia lesche, 22.06.2003</tspan><tspan
          sodipodi:role="line"
          x="458.57144"
-         y="793.86267"
-         id="tspan3410">      (leicht angepasst von WS)</tspan><tspan
+         y="793.61218"
+         id="tspan3410">    (leicht angepasst von WS)</tspan><tspan
          sodipodi:role="line"
          x="458.57144"
-         y="805.36316"
-         id="tspan3412">      [vektorisiert für FG Info, '08]</tspan><tspan
+         y="804.86218"
+         id="tspan3412">    [vektorisiert für FG Info, '08]</tspan><tspan
          sodipodi:role="line"
          x="458.57144"
-         y="816.86365"
+         y="816.11218"
          id="tspan3408" /></text>
     <text
        xml:space="preserve"
@@ -629,7 +613,7 @@
          sodipodi:role="line"
          x="151.04605"
          y="893.44958"
-         id="tspan3432">[7] ... Interessenvertretung der Studierendenschaft – im Fachbereich 1 gibt es keinen FSR</tspan><tspan
+         id="tspan3432">[7] ... Interessenvertretung der Studierendenschaft - im Fachbereich 1 gibt es keinen FSR</tspan><tspan
          sodipodi:role="line"
          x="151.04605"
          y="904.69958"
