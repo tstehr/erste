@@ -38,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7713437"
-     inkscape:cx="101.08132"
-     inkscape:cy="246.06419"
+     inkscape:zoom="2.5050583"
+     inkscape:cx="365.69621"
+     inkscape:cy="357.35128"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -143,9 +143,9 @@
          sodipodi:linespacing="125%"
          transform="matrix(0.9582908,-0.2857948,0.2857948,0.9582908,0,0)"><tspan
            sodipodi:role="line"
-           id="tspan3795"
            x="-13.593526"
-           y="260.33365">M19,M13</tspan></text>
+           y="260.33365"
+           id="tspan2982">M19</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Standard Symbols L;-inkscape-font-specification:Standard Symbols L"
@@ -157,7 +157,7 @@
            sodipodi:role="line"
            x="181.66396"
            y="248.63179"
-           id="tspan3863">M19,M13</tspan></text>
+           id="tspan3863">M19,433</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Standard Symbols L;-inkscape-font-specification:Standard Symbols L"
@@ -234,7 +234,7 @@
            sodipodi:role="line"
            id="tspan3861"
            x="446.21088"
-           y="365.70853">M13</tspan></text>
+           y="365.70853">433</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Standard Symbols L;-inkscape-font-specification:Standard Symbols L"
