@@ -1,0 +1,49 @@
+\documentclass[12pt]{n-te}
+
+%\usepackage[latin1]{inputenc}
+\usepackage{
+  graphicx,
+  pdfpages,
+  wasysym
+}
+
+\nedition{1}{WS 2008/2009}
+
+%% Trennregeln
+\hyphenation{
+  AStA
+  Mit-be-wohnerIn-nen
+  Pro-fessorInnen
+  erwischt
+  viiieel
+  y-Nummer
+  Uniaccount
+}
+%\hbadness=10000
+
+\begin{document}
+  \setcounter{page}{1000} % doofe warning wegmachen
+  \input{texte/titelblatt}
+
+  \setcounter{page}{1}
+  \begin{figure*}[t]
+    \includegraphics[angle=90, width=\textwidth]{bilder/plan.pdf}
+  \end{figure*}
+  \clearpage
+
+  \input{texte/vorwort}
+  \newpage
+  \ntoc %% Inhaltsverzeichnis
+  \clearpage
+
+  \include{texte/termine}
+  \include{texte/gruppen}
+  \include{texte/studienplan}
+  \include{texte/menschen}
+  \include{texte/erstitodo}
+  \include{texte/computer}
+  \include{texte/freizeit}
+  \include{texte/nuetzliches}
+
+\end{document}
+
