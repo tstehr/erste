@@ -7,7 +7,7 @@
   wasysym
 }
 
-\nedition{1}{WS 2008/2009}
+\nedition{1}{WS 2009/2010}
 
 %% Trennregeln
 \hyphenation{
@@ -24,17 +24,20 @@
 \begin{document}
   \setcounter{page}{1000} % doofe warning wegmachen
   \input{texte/titelblatt}
-
-  \setcounter{page}{1}
+  \thispagestyle{empty}
   \begin{figure*}[t]
-    \includegraphics[angle=90, width=\textwidth]{bilder/plan.pdf}
+    \centering\includegraphics[angle=90, width=\textwidth]{bilder/plan.pdf}
   \end{figure*}
   \clearpage
+  \setcounter{page}{1}
 
   \input{texte/vorwort}
   \newpage
   \ntoc %% Inhaltsverzeichnis
   \clearpage
+%  \newpage
+%  \hspace{1cm}
+  \newpage
 
   \include{texte/termine}
   \include{texte/gruppen}
