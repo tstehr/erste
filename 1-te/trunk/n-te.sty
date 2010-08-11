@@ -5,6 +5,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{n-te}
 
+\usepackage{ifpdf}
+
 \usepackage{
   dblfloatfix,
 %  ngerman,
@@ -12,7 +14,9 @@
   url
 }
 
+\ifpdf
 \usepackage[pdftex]{color,graphicx}
+\fi
 \usepackage[right]{eurosym}
 
 %% \renewcommand{\dbltopfraction}{0.9}
