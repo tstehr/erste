@@ -24,7 +24,7 @@
 %% Neue deutsche Rechtschreibung (Silbentrennung) als Package einbinden
 %% Makro-Package einbinden (darf erst *nach* ngerman.sty eingebunden werden!)
 %%
-\RequirePackage{palatino,ngerman,n-te}
+\RequirePackage{mathpazo,ngerman,n-te}
 
 %% Abstand zwischen Spalten auf 8mm setzen
 %%

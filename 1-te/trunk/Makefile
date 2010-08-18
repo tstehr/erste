@@ -32,3 +32,11 @@ bilder/gremienkunde2.png: bilder/gremienkunde2.svg
 	psbook 1-te_A5.ps 1-te_Reordered_A5.ps
 	psnup -2 -s1 -Pa5 -pa4 1-te_Reordered_A5.ps 1-te_A4.ps
 	ps2pdf 1-te_A4.ps
+
+clean: 
+	rm 1-te.pdf
+	rm 1-te.dvi
+	rm 1-te.aux
+	rm 1-te.log
+	rm 1-te.toc
+	rm -rf texte/*aux
