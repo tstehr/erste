@@ -19,7 +19,7 @@ cp -r bilder htmlout/
 
 find ./htmlout/ -depth -name "*.pdf" -or -name "*.dia" -or -name "*.svg" -or -name "*.xcf" -or -name "*.tif*" | xargs rm -f
 
-# Now change the encoding from ISO to UTF-8
+# Now apply an XSLT-Transformation to the file to strip away unwanted parts. This also converts ISO to UTF-8 on the fly.
 
 for file in $( find htmlout/ -name '*.html' )
 do
@@ -28,13 +28,13 @@ do
   xsltproc --html --novalid -o $file.trans scrap.xslt $file
   mv $file.trans $file
 
-  #if there were any utf-8 problems, this might solve them
+  #if there were any utf-8 problems, this might solve them, but for some reason the XSLT already does it
   #iconv -f ISO-8859-1 -t UTF-8 -o $file $file.trans
 done
 
 # Now scale down all pictures for html display. The pics for the pdf might have widhts up to 650 or even 1400 pixels, for the web page, we need to stay below 520 pixels.
 
-for file in $( find ./htmlout/bilder/ -name '*.png' -or -name '*.jpg' )
+for file in $( find ./htmlout/bilder/ -name '*.png' -or -name '*.jp*g' )
 do
   convert "$file" -resize "520>" "$file"
 done
@@ -45,5 +45,6 @@ find ./htmlout/ -depth -name ".svn" | xargs rm -r
 
 # Now we should have a valid webpage in the htmlout directory, so we zip it
 
-zip -r erste.zip htmlout
+rm -f erste.zip
 
+zip -r erste.zip htmlout
