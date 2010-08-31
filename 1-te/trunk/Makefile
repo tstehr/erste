@@ -34,9 +34,10 @@ bilder/gremienkunde2.png: bilder/gremienkunde2.svg
 	ps2pdf 1-te_A4.ps
 
 clean: 
-	rm 1-te.pdf
-	rm 1-te.dvi
-	rm 1-te.aux
-	rm 1-te.log
-	rm 1-te.toc
+	rm -f 1-te.pdf
+	rm -f 1-te.dvi
+	rm -f 1-te.aux
+	rm -f 1-te.log
+	rm -f 1-te.toc
 	rm -rf texte/*aux
+	rm -f *.html
