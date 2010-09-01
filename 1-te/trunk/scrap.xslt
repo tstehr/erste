@@ -1,6 +1,10 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:output method="html" omit-xml-declaration="yes"/>
+  <xsl:output encoding="UTF-8"
+              method="xml"
+              omit-xml-declaration="yes"
+              indent="yes" />
+
 
 <!-- Select the top level element "html" and only process the children of the "body" child, removing "head" etc. -->
 <xsl:template match="html">
@@ -30,6 +34,7 @@
             <xsl:apply-templates select="node()|@*"/>
         </xsl:copy>
     </xsl:template>
+
 
 
 </xsl:stylesheet>

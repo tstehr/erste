@@ -24,8 +24,10 @@ find ./htmlout/ -depth -name "*.pdf" -or -name "*.dia" -or -name "*.svg" -or -na
 for file in $( find htmlout/ -name '*.html' )
 do
   echo $file
-  echo xsltproc --html --novalid -o $file.trans scrap.xslt $file
-  xsltproc --html --novalid -o $file.trans scrap.xslt $file
+  # xsltproc insists on printing the xml-declatation even when it is disabled, it also insists on converting to UTF-8 without being asked to AND to write into the output that the encoding is ISO-8859-1, so we may conclude that xsltproc SUCKS
+  # echo xsltproc --html --novalid -o $file.trans scrap.xslt $file
+  # xsltproc --html --novalid -o $file.trans scrap.xslt $file
+  xmlstarlet tr --html scrap.xslt $file | sed -e 's/<?/<!--/' -e 's/?>/-->/' > $file.trans
   mv $file.trans $file
 
   #if there were any utf-8 problems, this might solve them, but for some reason the XSLT already does it
