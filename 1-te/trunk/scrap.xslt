@@ -21,6 +21,11 @@
 	</a>
 </xsl:template>
 
+<!-- src-Attributes usually point to static files - those are located in another directory -->
+<xsl:template match="img">
+	<img src="http://fginfo.cs.tu-bs.de/Downloads/1te/{@src}" alt="(Hier sollte ein Bild sein, nämlich http://fginfo.cs.tu-bs.de/Downloads/1te/{@src})" />
+</xsl:template>
+
 <!-- Copies all nodes to the output -->
 <xsl:template match="node()">
 	<xsl:copy>
