@@ -19,6 +19,10 @@ cp -r bilder htmlout/
 
 find ./htmlout/ -depth -name "*.pdf" -or -name "*.dia" -or -name "*.svg" -or -name "*.xcf" -or -name "*.tif*" | xargs rm -f
 
+# We can assume that there is some stupid file that contains "</td></tr></table>" even though it should not. Filter that.
+sed -e 's/<\/td><\/tr><\/table>//' htmlout/1-teli1.html > htmlout/1-teli1.html.tmp
+mv htmlout/1-teli1.html.tmp htmlout/1-teli1.html
+
 # Now apply an XSLT-Transformation to the file to strip away unwanted parts. This also converts ISO to UTF-8 on the fly.
 
 for file in $( find htmlout/ -name '*.html' )
