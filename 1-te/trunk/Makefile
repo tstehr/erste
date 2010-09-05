@@ -1,10 +1,22 @@
-TEXTE=texte/termine.tex texte/gruppen.tex texte/studienplan.tex texte/menschen.tex texte/erstitodo.tex texte/computer.tex texte/freizeit.tex texte/nuetzliches.tex ${TEXTE_GRUPPEN} ${TEXTE_COMPUTER} ${TEXTE_MENSCHEN}
+TEXTE_ERSTETAGE=texte/erstetage/sonstiges.tex texte/erstetage/index.tex texte/erstetage/termine.tex texte/erstetage/ersticheckliste.tex texte/erstetage/tutoren.tex
 
-TEXTE_GRUPPEN=texte/gruppen/gremien2.tex texte/gruppen/fachgruppe.tex texte/gruppen/tutoren.tex
+TEXTE_COMPUTER=texte/computer/links.tex texte/computer/index.tex texte/computer/msdnaa.tex texte/computer/linux.tex texte/computer/gitz.tex texte/computer/computer.tex
 
-TEXTE_COMPUTER=texte/computer/links.tex texte/computer/computer.tex
+TEXTE_POLITIK=texte/politik/index.tex texte/politik/gremien.tex texte/politik/gremien2.tex texte/politik/unpolitisch.tex texte/politik/fachgruppe.tex texte/politik/studiengebuehren.tex
 
-TEXTE_MENSCHEN=texte/menschen/profs.tex texte/menschen/interview.tex
+TEXTE_STUDIENPLAN=texte/studienplan/index.tex texte/studienplan/begriffe.tex texte/studienplan/bpo.tex
+
+TEXTE_MASTER=texte/master/index.tex
+
+TEXTE_MENSCHEN=texte/menschen/computersuechtig.tex texte/menschen/index.tex texte/menschen/interview.tex
+
+TEXTE_FREIZEIT=texte/freizeit/index.tex texte/freizeit/tagebuch.tex texte/freizeit/locations.tex 
+
+TEXTE_BACHELOR=texte/bachelor/index.tex texte/bachelor/stundenplan.tex texte/bachelor/studienplan.tex texte/bachelor/profs.tex
+
+TEXTE_NUETZLICHES=texte/nuetzliches/index.tex texte/nuetzliches/semesterticket.tex
+
+TEXTE=texte/impressum.tex texte/titelblatt.tex texte/vorwort.tex ${TEXTE_ERSTETAGE} ${TEXTE_COMPUTER} ${TEXTE_POLITIK} ${TEXTE_STUDIENPLAN} ${TEXTE_MASTER} ${TEXTE_MENSCHEN} ${TEXTE_FREIZEIT} ${TEXTE_BACHELOR} ${TEXTE_NUETZLICHES}
 
 BILDER=bilder/gremienkunde2.png
 

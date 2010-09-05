@@ -1,14 +1,14 @@
 %%
-%% Dokumentenklasse für das Standard-Layout der n-ten
+%% Dokumentenklasse fï¿½r das Standard-Layout der n-ten
 %%
 %%
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{n-te}[2003/04/16 Standard-Layout n-te]
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions
-\LoadClass[a4paper,twocolumn,twoside]{article}
+\LoadClass[a4paper,twoside]{article}
 
-%% parskip.sty erzeugt "deutsche" Absatzform - keine Einrückung, dafür Abstand
+%% parskip.sty erzeugt "deutsche" Absatzform - keine Einrï¿½ckung, dafï¿½r Abstand
 %% Abstand nochmal nachjustieren
 %%
 \RequirePackage{parskip}
@@ -30,7 +30,7 @@
 %%
 \setlength\columnsep{8mm}
 
-%% Zähler setzen
+%% Zï¿½hler setzen
 %%
 %% Gliederungen numerieren bis 0 (auch nicht section)
 %% Gliederungen in Inhaltsverzeichnis bis 1 (nur section)
@@ -38,32 +38,32 @@
 \setcounter{secnumdepth}{0}
 \setcounter{tocdepth}{2}
 
-%% Befehl überschreiben: section
+%% Befehl ï¿½berschreiben: section
 %% 
-%% Formatierung: Zentriert, Größer (Large), Fett
+%% Formatierung: Zentriert, Grï¿½ï¿½er (Large), Fett
 %%
 \renewcommand\section{%
-	\@startsection{section}{1}%         Gliederungsebene und Überschriftstext
-		{0pt}%                          Einrückung der Überschrift
-		{-1.5ex plus-1ex minus-.2ex}%   Abstand vor Überschrift
-		{2.3ex plus.2ex}%               Abstand nach Überschrift
-		{\LARGE\bfseries\centering}%    Formatierung Überschrift
-	%\setcounter\footnote{0}%            Fußnote in jedem Abschnitt mit 1 beginnen
+	\@startsection{section}{1}%         Gliederungsebene und ï¿½berschriftstext
+		{0pt}%                          Einrï¿½ckung der ï¿½berschrift
+		{-1.5ex plus-1ex minus-.2ex}%   Abstand vor ï¿½berschrift
+		{2.3ex plus.2ex}%               Abstand nach ï¿½berschrift
+		{\LARGE\bfseries\centering}%    Formatierung ï¿½berschrift
+	%\setcounter\footnote{0}%            Fuï¿½note in jedem Abschnitt mit 1 beginnen
 }
 
-%% Befehl überschreiben: subsection
+%% Befehl ï¿½berschreiben: subsection
 %%
-%% Formatierung: Groß (large), Fett
+%% Formatierung: Groï¿½ (large), Fett
 %%
 \renewcommand\subsection{%
 	\@startsection{subsection}{1}%
-		{15pt}%                         Einrückung der Überschrift
-		{-1ex plus-1ex minus-0.2ex}%    Abstand vor Überschrift
-		{1ex plus0.2ex}%                Abstand nach Überschrift
-		{\large\bfseries}%              Formatierung Überschrift
+		{15pt}%                         Einrï¿½ckung der ï¿½berschrift
+		{-1ex plus-1ex minus-0.2ex}%    Abstand vor ï¿½berschrift
+		{1ex plus0.2ex}%                Abstand nach ï¿½berschrift
+		{\large\bfseries}%              Formatierung ï¿½berschrift
 }
 
-%% Befehl überschreiben: subsubsection
+%% Befehl ï¿½berschreiben: subsubsection
 %%
 %% Formatierung: Fett
 %%
@@ -71,13 +71,13 @@
 	\@startsection{subsubsection}{1}%
 		{0pt}                           %%
 		{0ex plus-0.5ex minus-0.1ex}    %% Abstand vor = 0 bedeutet Standardabstand
-		{0.05ex plus0.2ex}              %% Abstand nach Überschrift darf nicht 0 sein!
+		{0.05ex plus0.2ex}              %% Abstand nach ï¿½berschrift darf nicht 0 sein!
 		{\bfseries}                     %%
 }
 
 %% Seitenstil setzen: myheadings
 %%
-%% Schreibt Seitenzahlen an die Außen- und die Kopfzeilentexte an die Innenkante
+%% Schreibt Seitenzahlen an die Auï¿½en- und die Kopfzeilentexte an die Innenkante
 %% Kopfzeilentext setzen mit ntecount oder manuell mit markboth
 %%
 \pagestyle{myheadings}
@@ -87,11 +87,11 @@
 %%
 %%
 \newenvironment{nimpressum}{%
-	%% sehr unschön, aber zum Ausgleich gegenüber tableofcontents notwendig
+	%% sehr unschï¿½n, aber zum Ausgleich gegenï¿½ber tableofcontents notwendig
 	\raisebox{-1mm}{%
-		\hspace\nimpressumsep{\Large\bfseries\nimpressumname}% Überschrift ausrichten
+		\hspace\nimpressumsep{\Large\bfseries\nimpressumname}% ï¿½berschrift ausrichten
 	}
-	\vspace{2.1ex plus.2ex}%            Abstand nach Überschrift einfügen
+	\vspace{2.1ex plus.2ex}%            Abstand nach ï¿½berschrift einfï¿½gen
 	\list{}{%
 		\labelwidth\nimpressumsep%
 		\leftmargin\labelwidth%
@@ -107,14 +107,14 @@
 
 %% Neue Umgebung: neditorial
 %%
-%% Überschreibt die Umgebung mit Editorial und setzt den Text zentriert
+%% ï¿½berschreibt die Umgebung mit Editorial und setzt den Text zentriert
 %% in einer Spalte.
 %%
 %% 1 [optional] Breite des einspaltigen Textes
 %%
 \newenvironment{neditorial}[1][100mm]%
 	{\onecolumn\centering\begin{minipage}{#1}%
-	%% normale Absatzabstände herstellen - macht LaTeX nicht automatisch :-(
+	%% normale Absatzabstï¿½nde herstellen - macht LaTeX nicht automatisch :-(
 		\setlength\parskip{1.5ex plus1ex minus.2ex}%
 		\section{\neditorialname}}%
 	{\end{minipage}\twocolumn}

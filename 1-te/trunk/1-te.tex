@@ -10,7 +10,7 @@
 \usepackage{pdfpages}
 \fi
 
-\nedition{1}{WS 2009/2010}
+\nedition{1}{WS 2010/2011}
 
 %% Trennregeln
 \hyphenation{
@@ -24,7 +24,20 @@
 }
 %\hbadness=10000
 
+%sollte eigentlich erlauben, die riesigen Abstände zwischen den sections zu reduzieren. hat dann aber nix gebracht:
+%\usepackage{titlesec}
+%\titlespacing{\section}      {0pt}{*0.3}{*0.3}
+%\titlespacing{\subsection}   {0pt}{*0.3}{*0.3}
+%\titlespacing{\subsubsection}{0pt}{*1}{*1}
+
+\usepackage{multicol}
+
+\newcommand{\nsection}[1]{\end{multicols}\section{#1}\begin{multicols}{2}}
+
 \begin{document}
+
+  \begin{multicols}{2}
+  
   \setcounter{page}{1000} % doofe warning wegmachen
   \input{texte/titelblatt}
   \thispagestyle{empty}
@@ -50,5 +63,7 @@
   \include{texte/freizeit/index}
   \include{texte/politik/index}
   \include{texte/nuetzliches/index}
+  % der letzte der vorherigen Texte endet bereits einspaltig
+  % \end{multicols}
 
 \end{document}

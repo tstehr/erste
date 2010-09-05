@@ -5,7 +5,8 @@ nicht das Wichtigste verpasst, haben wir die ersten Termine kompakt f"ur
 euch zusammengefasst. Die meisten davon bieten die Gelegenheit Fragen zu
 stellen und nebenbei gleich ein paar nette Kommilitonen kennen zu lernen.
 
-%\begin{figure}[h]
+\end{multicols}
+
 \begin{tabular}{|l|l|p{6.7cm}|c|c|c|}
 \hline \textbf{Datum} & \textbf{Uhrzeit} & \textbf{Veranstaltung}	& \textbf{Ort} & \textbf{B} & \textbf{M} \\
 \hline 20.09. – 1.10.
@@ -30,9 +31,18 @@ stellen und nebenbei gleich ein paar nette Kommilitonen kennen zu lernen.
 \hline 10.11.	& 16:30 – \ldots & Spieleabend der Fachgruppe			& vor IZ 150	&B&M\\ 
 \hline
 \end{tabular} 
-%\end{figure}
 
-Zum Verständnis der Spalte \textit{Ort} schau in den Abschnitt \textit{Campuskarte} auf Seite ?.
+\begin{multicols}{2}
+
+Zum besseren Verständnis der Spalte \textit{Ort} schau in den Abschnitt \textit{Campuskarte} auf Seite \pageref{campuskarte}.
+
+%TODO folgendes muss dann aber auch wirklich umgesetzt werden:
+Ihr findet die Termine auch online unter \url{http://fginfo.cs.tu-bs.de/index.php/termine/}.
+Falls ihr einen Dienst, ein Handy oder eine Software nutzt, die das iCalender-Format unterstützt
+könnt ihr die Termine auch von dort aus einbinden und habt sie somit im Blick. 
+Dazu gegören z.B. iPhone, Andoird, Google Calendar, Outlook\ldots Eine Liste 
+von ca. 60 Programmen findet ihr unter 
+\url{http://en.wikipedia.org/wiki/List_of_applications_with_iCalendar_support}
 
 %In der \textit{Ort}-Spalte stehen meist Raumnummern. F"ur alle R"aume die nicht
 %im IZ (steht f"ur Informatikzentrum) liegen, schaut am besten auf den
@@ -40,5 +50,12 @@ Zum Verständnis der Spalte \textit{Ort} schau in den Abschnitt \textit{Campuska
 %den Rest m"usst ihr dann auf den Plan im Stockwerk schauen (Kleine Falle:
 %zwischen EG und 1. OG liegt das Galeriegescho"s - Raum IZ 150 liegt also
 %effektiv in der zweiten Etage).
-
 % - Gl"uhweinabend im Informatikzentrum (IZ)
+
+% Dieser Trick hilft uns, eine neue Seite zu erzwingen
+% (auf diese passt eh nix sinnvolles mehr) und dennoch die 
+% Spaltenlängen auszubalancieren.
+\end{multicols}
+\newpage
+\begin{multicols}{2}
+
