@@ -1,3 +1,7 @@
 \begin{titlepage}
-\includepdf{bilder/titelseite.jpg}
+\ifpdf
+\includepdf{bilder/titelseite.pdf}
+\else
+\includegraphics{bilder/titelseite.jpg}
+\fi
 \end{titlepage}
