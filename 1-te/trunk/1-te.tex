@@ -49,12 +49,17 @@
   \setcounter{page}{1}
 
   \input{texte/vorwort}
+\end{multicols}
+\renewcommand{\baselinestretch}{0.85}\normalsize
   \newpage
   \ntoc %% Inhaltsverzeichnis
   \clearpage
 %  \newpage
 %  \hspace{1cm}
+\renewcommand{\baselinestretch}{1.0}\normalsize
   \newpage
+    \begin{multicols}{2}
+
 
   \include{texte/erstetage/index}
   \include{texte/studienplan/index}
