@@ -29,15 +29,14 @@
 	<img src="http://fginfo.cs.tu-bs.de/1te/{@src}" alt="(Hier sollte ein Bild sein, nämlich http://fginfo.cs.tu-bs.de/1te/{@src})" />
 </xsl:template>
 
-<!-- Change heading levels. The blog only displays h1 and h2 in a beautiful way. Maybe we should convince it to do it for h3, too. -->
+<!-- Change heading levels. The blog only displays h1 and h2 in a beautiful way. The converter generates only h3, h4 and h5, and we don't need the h3 headings at all beacuse they are redundant. Wordpress generates a h1 with the section title anyway, so we remove h3 and change h4 and h5. -->
 <xsl:template match="h3">
-	<h1><xsl:apply-templates/></h1>
 </xsl:template>
 <xsl:template match="h4">
-	<h2><xsl:apply-templates/></h2>
+	<h1><xsl:apply-templates/></h1>
 </xsl:template>
 <xsl:template match="h5">
-	<h3><xsl:apply-templates/></h3>
+	<h2><xsl:apply-templates/></h2>
 </xsl:template>
 
 
