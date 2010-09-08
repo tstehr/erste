@@ -6,18 +6,27 @@
 
 \input{texte/bachelor/profs}
 
+
+%muss im master, aber wo passt das rein?
+%\input{texte/bachelor/stundenplan}
 \input{texte/bachelor/studienplan}
-
-\label{musterstudienplan}
-\begin{figure}[h]
-  \centering\includegraphics[angle=90,totalheight=\textheight, width=\textwidth ]{texte/bachelor/studienplan.pdf}
-\end{figure}
-
-\label{studienplan_neu}
-\begin{figure}[h]
-  \centering\includegraphics[angle=90,totalheight=\textheight, width=\textwidth ]{texte/bachelor/studienplan_neu.pdf}
-\end{figure}
-
-\input{texte/bachelor/stundenplan}
-
 \input{texte/bachelor/quovadis}
+\end{multicols}
+
+%musterstudien
+\begin{figure}[p]
+  \centering\includegraphics[angle=90,totalheight=\textheight,
+  width=\textwidth ]{texte/bachelor/studienplan.pdf}
+\label{musterstudienplan}
+\end{figure}
+\begin{figure}[p]
+  \centering\includegraphics[angle=90,totalheight=\textheight, width=\textwidth ]{texte/bachelor/studienplan_neu.pdf}
+\label{studienplan_neu}
+\end{figure}%\newpage
+\newpage
+\begin{multicols}{2}
+\input{texte/bachelor/studienplan_bericht}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../1-te"
+%%% End: 
