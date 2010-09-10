@@ -89,7 +89,7 @@
 \newenvironment{nimpressum}{%
 	%% sehr unsch�n, aber zum Ausgleich gegen�ber tableofcontents notwendig
 	\raisebox{-1mm}{%
-		\hspace\nimpressumsep{\Large\bfseries\nimpressumname}% �berschrift ausrichten
+		\Large\bfseries\nimpressumname
 	}
 	\vspace{2.1ex plus.2ex}%            Abstand nach �berschrift einf�gen
 	\list{}{%
@@ -101,7 +101,7 @@
 	}%
 	{\endlist}
 \newlength\nimpressumsep
-\setlength\nimpressumsep{25mm}
+\setlength\nimpressumsep{40mm}
 \newcommand\nimpressumname{Impressum}
 \newcommand*\nimpressumlabel[1]{\normalfont\bfseries #1}
 
