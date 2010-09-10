@@ -1,6 +1,11 @@
 \begin{titlepage}
+% Der folgende Hack sorgt dafür, dass die Titelseite seitenfüllend eingebunden wird, ohne dass diese zuvor in eine PDF gekapselt werden muss.
 \ifpdf
-\includepdf{bilder/titelseite.pdf}
+\begin{textblock}{3}(0,0)
+\includegraphics[width=\paperwidth]{bilder/titelseite.jpg}
+\end{textblock}
+\leavevmode\newpage 
+%\includepdf{bilder/titelseite.pdf}
 \else
 \includegraphics{bilder/titelseite.jpg}
 \fi
