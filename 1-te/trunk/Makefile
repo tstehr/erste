@@ -52,4 +52,5 @@ clean:
 	rm -f 1-te.log
 	rm -f 1-te.toc
 	rm -rf texte/*aux
+	rm -rf texte/*/*aux
 	rm -f *.html
