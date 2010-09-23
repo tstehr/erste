@@ -11,20 +11,44 @@
 %\input{texte/bachelor/stundenplan}
 \input{texte/bachelor/studienplan}
 \input{texte/bachelor/quovadis}
-\end{multicols}
-
+%\newpage
+\end{multicols}\newpage
 %musterstudien
-\begin{figure}[p]
-  \centering\includegraphics[angle=90,totalheight=\textheight,
+\begin{minipage}{1.0\linewidth}
+%\begin{wrapfigure}{r}{0.5\textwidth}   
+\begin{center}     
+%\includegraphics[width=0.48\textwidth]{gull}   
+\includegraphics[angle=90,totalheight=\textheight,
   width=\textwidth ]{texte/bachelor/studienplan.pdf}
+\end{center} 
 \label{musterstudienplan}
-\end{figure}
-\begin{figure}[p]
-  \centering\includegraphics[angle=90,totalheight=\textheight, width=\textwidth ]{texte/bachelor/studienplan_neu.pdf}
-\label{studienplan_neu}
-\end{figure}%\newpage
+%\caption{A gull} 
+%\end{wrapfigure}
+\end{minipage}
 \newpage
-\begin{multicols}{2}
+\begin{minipage}{1.0\linewidth}
+%\begin{wrapfigure}{r}{0.5\textwidth}   
+%\newpage \
+\begin{center}     
+%\newpage
+\includegraphics[angle=90,totalheight=\textheight, width=\textwidth ]{texte/bachelor/studienplan_neu.pdf}
+\end{center}
+%\end{wrapfigure}%\newpage  
+\label{studienplan_neu}
+\end{minipage} \newpage
+%\begin{minipage}
+%\newpage
+ %Note that we have specified a size for b
+%\begin{figure}[h!]
+ %% \centering\includegraphics[angle=90,totalheight=\textheight,
+%  width=\textwidth ]{texte/bachelor/studienplan.pdf}
+%\label{musterstudienplan}
+%\end{figure}%\newpage
+%\begin{figure}[h!]
+  %\centering
+\
+\ %\newpage \ %\newpage 
+\begin{multicols}{2}%\newpage
 \input{texte/bachelor/studienplan_bericht}
 %%% Local Variables: 
 %%% mode: latex

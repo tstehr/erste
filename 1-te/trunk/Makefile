@@ -20,9 +20,9 @@ TEXTE=texte/impressum.tex texte/titelblatt.tex texte/vorwort.tex ${TEXTE_ERSTETA
 
 BILDER=bilder/gremienkunde2.png
 
-MINI=mini.tex
+MINI=mini-ba.tex mini-ma.tex
 
-ALL: 1-te.pdf mini.pdf
+ALL: 1-te.pdf mini-ba.pdf mini-ma.pdf
 
 bilder/gremienkunde2.svg: bilder/gremienkunde2.dia
 	dia -t svg -e bilder/gremienkunde2.svg bilder/gremienkunde2.dia
@@ -30,10 +30,15 @@ bilder/gremienkunde2.svg: bilder/gremienkunde2.dia
 bilder/gremienkunde2.png: bilder/gremienkunde2.svg
 	convert bilder/gremienkunde2.svg bilder/gremienkunde2.png
 
-mini.pdf:  ${MINI}
-	pdflatex mini.tex
-	pdflatex mini.tex > /dev/null
-	pdflatex mini.tex >/dev/null
+mini-ma.pdf:  ${MINI}
+	pdflatex mini-ma.tex
+	pdflatex mini-ma.tex > /dev/null
+	pdflatex mini-ma.tex >/dev/null
+
+mini-ba.pdf:  ${MINI}
+	pdflatex mini-ba.tex
+	pdflatex mini-ba.tex > /dev/null
+	pdflatex mini-ba.tex >/dev/null
 
 
 1-te.pdf: 1-te.tex ${TEXTE} ${BILDER}
@@ -63,7 +68,13 @@ clean:
 	rm -rf texte/*aux
 	rm -rf texte/*/*aux
 	rm -f *.html
-	rm -rf mini.aux
-	rm -rf mini.pdf
-	rm -rf mini.log
-	rm -rf mini.out
+	rm -rf mini-ba.aux
+	rm -rf mini-ba.dvi
+	rm -rf mini-ma.dvi
+	rm -rf mini-ba.pdf
+	rm -rf mini-ba.log
+	rm -rf mini-ba.out
+	rm -rf mini-ma.aux
+	rm -rf mini-ma.pdf
+	rm -rf mini-ma.log
+	rm -rf mini-ma.out

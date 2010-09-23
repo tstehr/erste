@@ -1,0 +1,107 @@
+\documentclass[12pt]{n-te}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{
+  graphicx,
+  wasysym
+}
+
+\ifpdf
+\usepackage{pdfpages}
+\usepackage[absolute]{textpos}
+\usepackage{graphicx} 
+\fi
+
+\usepackage{amssymb}
+
+\nedition{1}{WS 2010/2011}
+
+%% Trennregeln
+\hyphenation{
+  AStA
+  Mit-be-wohnerIn-nen
+  Pro-fessorInnen
+  erwischt
+  viiieel
+  y-Nummer
+  Uniaccount
+}
+%\hbadness=10000
+
+%sollte eigentlich erlauben, die riesigen Abstände zwischen den sections zu reduzieren. hat dann aber nix gebracht:
+%\usepackage{titlesec}
+%\titlespacing{\section}      {0pt}{*0.3}{*0.3}
+%\titlespacing{\subsection}   {0pt}{*0.3}{*0.3}
+%\titlespacing{\subsubsection}{0pt}{*1}{*1}
+
+\usepackage{multicol}
+
+% Könnte man demmächst verwenden, wird aber derzeit wohl noch nicht verwendet, sondern vor ort jeweils lang und breit gemacht:
+\newcommand{\nsection}[1]{\end{multicols}\section{#1}\begin{multicols}{2}}
+
+\newcommand{\mehrInfo}[1]{\fbox{$\rightarrow$ #1 }}
+%\include{1-te.aux}
+\begin{document}
+
+ % \begin{multicols}{2}
+  
+%  \setcounter{page}{1000} % doofe warning wegmachen
+%  \input{texte/titelblatt}
+%  \thispagestyle{empty}
+%  \begin{figure*}[t]
+%    \label{plan}
+%    \centering\includegraphics[angle=90, width=\textwidth]{bilder/plan.pdf}
+%  \end{figure*}
+%  \clearpage
+%  \setcounter{page}{1}
+
+%  \input{texte/vorwort}
+%\end{multicols}
+\renewcommand{\baselinestretch}{0.85}\normalsize
+  \newpage
+%  \ntoc %% Inhaltsverzeichnis
+  \clearpage
+  \newpage
+%  \hspace{1cm}
+%\renewcommand{\baselinestretch}{1.0}\normalsize
+ % \newpage
+
+ 
+    \begin{multicols}{2}
+\include{texte/mini/mini_1}
+\subsection*{Studienplanung}
+Ihr müsst pro Semester ungefähr 30 Credits machen, dann habt ihr nach
+6 Semestern den Bachelor. %und nach 4 den Master. Für den Master kann
+%das so aussehen:
+Eurer Stundenplan sieht im ersten Semester dann beispielsweise so aus: 
+\\
+ Über den gesamten Bachelor habt ihr natürlich
+  noch weitere Fächer, einen möglichen Studienverlauf zeigt der
+  Studienplan auf der nächsten Seite.%Für den Bachelor findet ihr auf der nächsten
+  %Seite eine eigene Grafik. In beiden Fällen gilt aber:
+Dabei gilt: Der Plan ist
+  lediglich ein Vorschlag, ihr seid nicht daran gebunden. An folgenden
+  Stellen findet ihr dazu mehr Informationen:\\
+Viele Hintergrundinfos im \\\mehrInfo{Abschnitt ,,Studienplanung'' ab
+  Seite 8}\\
+Spezielles zum Bachelor findet ihr \mehrInfo{ ab Seite
+  18 }\\
+\end{multicols}
+\includegraphics[angle=90,totalheight=0.8\textheight, 
+]%width=0.6\textwidth]
+{texte/nuetzliches/stundenplan}
+%\begin{figure}[p]
+  %\centering
+%\includegraphics[%angle=90,totalheight=\textheight, 
+%width=\textwidth]{bilder/musterstudienplan_msc_informatik_102009.pdf}
+
+%Spezielles zum Master findet ihr \mehrInfo{ ab Seite 28 \hfill}
+\newpage
+\includegraphics[angle=90,totalheight=\textheight
+, width=\textwidth]{texte/bachelor/studienplan_neu.pdf}
+\newpage
+\begin{multicols}{2}
+\include{texte/mini/mini_2}
+  \end{multicols}
+
+\end{document}
