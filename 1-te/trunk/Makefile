@@ -20,13 +20,21 @@ TEXTE=texte/impressum.tex texte/titelblatt.tex texte/vorwort.tex ${TEXTE_ERSTETA
 
 BILDER=bilder/gremienkunde2.png
 
-ALL: 1-te.pdf
+MINI=mini.tex
+
+ALL: 1-te.pdf mini.pdf
 
 bilder/gremienkunde2.svg: bilder/gremienkunde2.dia
 	dia -t svg -e bilder/gremienkunde2.svg bilder/gremienkunde2.dia
 
 bilder/gremienkunde2.png: bilder/gremienkunde2.svg
 	convert bilder/gremienkunde2.svg bilder/gremienkunde2.png
+
+mini.pdf:  ${MINI}
+	pdflatex mini.tex
+	pdflatex mini.tex > /dev/null
+	pdflatex mini.tex >/dev/null
+
 
 1-te.pdf: 1-te.tex ${TEXTE} ${BILDER}
 	pdflatex 1-te.tex
@@ -49,8 +57,13 @@ clean:
 	rm -f 1-te.pdf
 	rm -f 1-te.dvi
 	rm -f 1-te.aux
+	rm -f 1-te.out
 	rm -f 1-te.log
 	rm -f 1-te.toc
 	rm -rf texte/*aux
 	rm -rf texte/*/*aux
 	rm -f *.html
+	rm -rf mini.aux
+	rm -rf mini.pdf
+	rm -rf mini.log
+	rm -rf mini.out
