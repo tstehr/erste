@@ -12,7 +12,7 @@ TEXTE_MENSCHEN=texte/menschen/computersuechtig.tex texte/menschen/index.tex text
 
 TEXTE_FREIZEIT=texte/freizeit/index.tex texte/freizeit/tagebuch.tex texte/freizeit/locations.tex 
 
-TEXTE_BACHELOR=texte/bachelor/index.tex texte/bachelor/stundenplan.tex texte/bachelor/studienplan.tex texte/bachelor/profs.tex
+TEXTE_BACHELOR=texte/bachelor/index.tex texte/bachelor/stundenplan.tex texte/bachelor/studienplan.tex texte/bachelor/profs.tex texte/bachelor/studienplan_bericht.tex
 
 TEXTE_NUETZLICHES=texte/nuetzliches/index.tex texte/nuetzliches/semesterticket.tex
 
