@@ -14,6 +14,9 @@
 <!-- Remove the crosslinks div by not outputting anything -->
 <xsl:template match="div[@class='crosslinks']" />
 
+<!-- Remove silly table cells with <hr> content -->
+<xsl:template match="tr[@class='hline']" />
+
 <!-- Links that link to "1-te..." are modified -->
 <xsl:template match="a[starts-with(@href,'1-te')]">
 	<a href="/index.php/die-erste/{translate(@href,'.','-')}">
