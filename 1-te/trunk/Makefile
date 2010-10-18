@@ -1,4 +1,4 @@
-TEXTE_ERSTETAGE=texte/erstetage/sonstiges.tex texte/erstetage/index.tex texte/erstetage/termine.tex texte/erstetage/ersticheckliste.tex texte/erstetage/tutoren.tex
+TEXTE_ERSTETAGE=texte/erstetage/sonstiges.tex texte/erstetage/index.tex texte/erstetage/termine.tex texte/erstetage/tabtermine.tex texte/erstetage/ersticheckliste.tex texte/erstetage/tutoren.tex
 
 TEXTE_COMPUTER=texte/computer/links.tex texte/computer/index.tex texte/computer/msdnaa.tex texte/computer/linux.tex texte/computer/gitz.tex texte/computer/computer.tex
 
