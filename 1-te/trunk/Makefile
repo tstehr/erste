@@ -1,6 +1,6 @@
 TEXTE_ERSTETAGE=texte/erstetage/sonstiges.tex texte/erstetage/index.tex texte/erstetage/termine.tex texte/erstetage/tabtermine.tex texte/erstetage/ersticheckliste.tex texte/erstetage/tutoren.tex
 
-TEXTE_COMPUTER=texte/computer/links.tex texte/computer/index.tex texte/computer/msdnaa.tex texte/computer/linux.tex texte/computer/gitz.tex texte/computer/computer.tex
+TEXTE_COMPUTER=texte/computer/links.tex texte/computer/index.tex texte/computer/msdnaa.tex texte/computer/linux.tex texte/computer/gitz.tex texte/computer/computer.tex texte/computer/computersuechtig.tex
 
 TEXTE_POLITIK=texte/politik/index.tex texte/politik/gremien.tex texte/politik/gremien2.tex texte/politik/unpolitisch.tex texte/politik/fachgruppe.tex texte/politik/studiengebuehren.tex
 
@@ -8,11 +8,11 @@ TEXTE_STUDIENPLAN=texte/studienplan/index.tex texte/studienplan/begriffe.tex tex
 
 TEXTE_MASTER=texte/master/index.tex
 
-TEXTE_MENSCHEN=texte/menschen/computersuechtig.tex texte/menschen/index.tex texte/menschen/interview.tex
+TEXTE_MENSCHEN= texte/menschen/index.tex 
 
 TEXTE_FREIZEIT=texte/freizeit/index.tex texte/freizeit/tagebuch.tex texte/freizeit/locations.tex 
 
-TEXTE_BACHELOR=texte/bachelor/index.tex texte/bachelor/stundenplan.tex texte/bachelor/studienplan.tex texte/bachelor/profs.tex texte/bachelor/studienplan_bericht.tex
+TEXTE_BACHELOR=texte/bachelor/index.tex texte/bachelor/interview.tex texte/bachelor/stundenplan.tex texte/bachelor/studienplan.tex texte/bachelor/profs.tex texte/bachelor/studienplan_bericht.tex
 
 TEXTE_NUETZLICHES=texte/nuetzliches/index.tex texte/nuetzliches/semesterticket.tex
 
