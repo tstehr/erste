@@ -30,9 +30,9 @@ Scheut euch nicht, einen der Tutoren zu kontaktieren. Ihr k"onnt euch auch nacht
 
 % TODO hier evtl. den Unterschied zwischen Tutor und Mentor erwähnen?
 
-\end{multicols}
 \ifpdf
 Damit ihr auch ein paar Gesichter zuordnen k"onnt - gerade wenn ihr eventuell selbst noch keinen Tutor habt - sind hier Fotos einiger Tutoren abgebildet:
+\end{multicols}
 
 % TODO Bilder aktualisieren, angeben, ob der jenige Bachelors oder Masters betreut (ist ja nicht immer identisch damit, was man selbst gerade ist)
 % NICHT als \paragraph, da das leider das Layout verhaut. Ist natürlich
@@ -40,7 +40,7 @@ Damit ihr auch ein paar Gesichter zuordnen k"onnt - gerade wenn ihr eventuell se
 %Leider ist das ganze Layout etwas screwed
 %Also ein alter Trick aus Web 1.0 Tagen\ldot.
 %Layout Tabellen! Nicht schön, aber wenns sonst nicht geht\ldot.
-\begin{center}
+  \begin{tabular}{c}
 \begin{tabular}{ccc}
   { \textbf{Bachelor Tutoren}} \ \\ 
 % \npicture[0.3\linewidth]
@@ -111,12 +111,12 @@ Damit ihr auch ein paar Gesichter zuordnen k"onnt - gerade wenn ihr eventuell se
 {bilder/tutoren/joko}
 {Jonathan\\ 6. Semester Bachelor \\
 \randomize{j.koscielny@tu-bs.de}}
-}\end{tabular}\end{center}
+}\end{tabular}\tabularnewline
 %\begin{left}
-\newpage
-{ \textbf{Master Tutoren}}\\
-\begin{center}
+%\newpage
+%\begin{center}
 \begin{tabular}{ccc}
+{ \textbf{Master Tutoren}}\\
 % NICHT als \paragraph, da das leider das Layout verhaut. Ist natürlich
 % unschön ):
 \npicture[0.3\linewidth]
@@ -157,15 +157,10 @@ Damit ihr auch ein paar Gesichter zuordnen k"onnt - gerade wenn ihr eventuell se
 %\npicture[0.3\linewidth]
 %{bilder/tutoren/stephan.jpg}
 %{Stephan\\ 5. Semester Master\\ stephan.friedrichs@tu-bs.de}
-
-
+  \end{tabular}
   \end{tabular}
   
-\end{center}
-    \begin{center}
-          \includegraphics[width=\linewidth]
-	  {bilder/comics/phd092706s.png}    \end{center}
-
+%\end{center}
 \else
 In der Druckfassung wären hier die Tutoren mit Emailadresse und Foto aufgelistet. Um die Privatspäre der Tutoren zu schützen, stehen diese jedoch nicht direkt hier in der Onlinefassung.
 \fi
