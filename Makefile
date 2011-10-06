@@ -36,5 +36,5 @@ dvi: ${MAINFILE}.tex
 clean: distclean
 	rm -f $(MAINFILE).{dvi,ps,pdf}	
 distclean:
-	rm -f *.{aux,log,toc}
+	rm -f *.{aux,log,toc,out}
 	rm -f *~
