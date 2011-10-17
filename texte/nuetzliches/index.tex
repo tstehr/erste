@@ -14,13 +14,16 @@ das Impressum, weitere Ansprechpartner neben der Fachgruppe, Campuskarten und eu
 \newpage
 \input{texte/nuetzliches/lernraeume}
 
-\input{texte/nuetzliches/semesterticket}
-
-%\input{texte/nuetzliches/27c3}
 \input{texte/nuetzliches/campuskarte}
 \end{multicols}
-\vfill{}
+\vspace{5cm}
 \input{texte/impressum}
+\newpage
+\begin{multicols}{2}
+\input{texte/nuetzliches/semesterticket}
+\end{multicols}
+
+%\input{texte/nuetzliches/27c3}
  %\newpage
 %\nurl{http://maps.google.de/maps/ms?ie=UTF8&hl=de&msa=0&msid=110022173347618328583.00044f5213e3e4ab36c53&z=17}%\begin{multicols}{2}
 %\hfill%\end{multicols}
@@ -35,8 +38,9 @@ das Impressum, weitere Ansprechpartner neben der Fachgruppe, Campuskarten und eu
 %stünde.
 \ifpdf
 \newpage
-\includegraphics[angle=90,totalheight=0.75\textheight, width=1\textwidth]
-{texte/nuetzliches/stundenplan-ss.pdf}
+\subsection*{Muster-Stundenplan Bachelor}
+\includegraphics[angle=90,totalheight=0.95\textheight, width=1\textwidth]
+{texte/nuetzliches/stundenplan.pdf}
 \fi
 %%% Local Variables: 
 %%% mode: latex
