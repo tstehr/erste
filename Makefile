@@ -1,72 +1,40 @@
-TEXTE_ERSTETAGE=texte/erstetage/sonstiges.tex texte/erstetage/index.tex texte/erstetage/termine.tex texte/erstetage/tabtermine.tex texte/erstetage/ersticheckliste.tex texte/erstetage/tutoren.tex
+# make Datei fuer LaTeX
+# Time-stamp: <2009-02-14 11:57:27 ewi>
+# Aufruf: make macht das, was hinter all: steht, bei Bedarf anpassen.
+#         make psA5 macht eine ps-Ausgabe in Din A5 Format.
+#         make clean loescht alles, was neu erzeugt werden kann.
+#         make pdf macht eine pdf-Ausgabe in Din A4 Format.
+#         make view zeigt die dvi-Version auf dem Monitor an.
+# ganz wichtig: die Befehlszeilen muessen mit einem TAB beginnen!!!
 
-TEXTE_COMPUTER=texte/computer/links.tex texte/computer/index.tex texte/computer/msdnaa.tex texte/computer/linux.tex texte/computer/gitz.tex texte/computer/computer.tex texte/computer/computersuechtig.tex
+MAINFILE = 1-te
+LATEXVIEW = xdvi
+#PDFVIEW = open "/Volumes/Mac OS X/Applications/Preview.app" 
 
-TEXTE_POLITIK=texte/politik/index.tex texte/politik/gremien.tex texte/politik/gremien2.tex texte/politik/unpolitisch.tex texte/politik/fachgruppe.tex texte/politik/studiengebuehren.tex
+all: ${MAINFILE}.tex 
+	pdflatex ${MAINFILE}.tex
+#	bibtex ${MAINFILE}.aux
+	pdflatex ${MAINFILE}.tex
+#	$(PDFVIEW) ${MAINFILE}.pdf
 
-TEXTE_STUDIENPLAN=texte/studienplan/index.tex texte/studienplan/begriffe.tex texte/studienplan/bpo.tex
+psA5: ${MAINFILE}.dvi
+	dvips -o ${MAINFILE}.ps ${MAINFILE}.dvi
+	psnup -2 ${MAINFILE}.ps > ${MAINFILE}A5.ps
+	rm ${MAINFILE}.ps
 
-TEXTE_MASTER=texte/master/index.tex
+view: ${MAINFILE}.dvi
+	${LATEXVIEW} ${MAINFILE}.dvi
 
-TEXTE_MENSCHEN= texte/menschen/index.tex 
+tgz: distclean
+	cd ..; tgz ${MAINFILE}.tgz ${MAINFILE}; \
+        mv ${MAINFILE}.tgz ${MAINFILE}
 
-TEXTE_FREIZEIT=texte/freizeit/index.tex texte/freizeit/tagebuch.tex texte/freizeit/locations.tex 
+dvi: ${MAINFILE}.tex 
+	latex ${MAINFILE}.tex
+	latex ${MAINFILE}.tex
 
-TEXTE_BACHELOR=texte/bachelor/index.tex texte/bachelor/interview.tex texte/bachelor/stundenplan.tex texte/bachelor/studienplan.tex texte/bachelor/profs.tex texte/bachelor/studienplan_bericht.tex
-
-TEXTE_NUETZLICHES=texte/nuetzliches/index.tex texte/nuetzliches/semesterticket.tex
-
-TEXTE=texte/impressum.tex texte/titelblatt.tex texte/vorwort.tex ${TEXTE_ERSTETAGE} ${TEXTE_COMPUTER} ${TEXTE_POLITIK} ${TEXTE_STUDIENPLAN} ${TEXTE_MASTER} ${TEXTE_MENSCHEN} ${TEXTE_FREIZEIT} ${TEXTE_BACHELOR} ${TEXTE_NUETZLICHES}
-
-BILDER=bilder/gremienkunde2.png
-
-MINI=mini.tex texte/mini/mini_1.tex texte/mini/mini_2.tex
-
-ALL: 1-te.pdf mini.pdf 
-
-bilder/gremienkunde2.svg: bilder/gremienkunde2.dia
-	dia -t svg -e bilder/gremienkunde2.svg bilder/gremienkunde2.dia
-
-bilder/gremienkunde2.png: bilder/gremienkunde2.svg
-	convert bilder/gremienkunde2.svg bilder/gremienkunde2.png
-
-
-mini.pdf:  ${MINI}
-	pdflatex mini.tex
-	pdflatex mini.tex > /dev/null
-	pdflatex mini.tex >/dev/null
-
-
-1-te.pdf: 1-te.tex ${TEXTE} ${BILDER}
-	pdflatex 1-te.tex
-	pdflatex 1-te.tex > /dev/null
-	pdflatex 1-te.tex > /dev/null
-
-1-te.dvi: 1-te.tex ${TEXTE} ${BILDER}
-	latex 1-te.tex
-	latex 1-te.tex > /dev/null
-	latex 1-te.tex > /dev/null
-
-1-te_A4.pdf: 1-te.pdf
-	pdftops -level3 1-te.pdf -paper A4
-	psresize -pa5 1-te.ps 1-te_A5.ps
-	psbook 1-te_A5.ps 1-te_Reordered_A5.ps
-	psnup -2 -s1 -Pa5 -pa4 1-te_Reordered_A5.ps 1-te_A4.ps
-	ps2pdf 1-te_A4.ps
-
-clean: 
-	rm -f 1-te.pdf
-	rm -f 1-te.dvi
-	rm -f 1-te.aux
-	rm -f 1-te.out
-	rm -f 1-te.log
-	rm -f 1-te.toc
-	rm -rf texte/*aux
-	rm -rf texte/*/*aux
-	rm -f *.html
-	rm -rf mini.aux
-	rm -rf mini.dvi
-	rm -rf mini-ma.dvi
-	rm -rf mini.pdf
-	rm -rf mini.log
-	rm -rf mini.out
+clean: distclean
+	rm -f $(MAINFILE).{dvi,ps,pdf}	
+distclean:
+	rm -f *.{aux,log,toc,out}
+	rm -f *~
