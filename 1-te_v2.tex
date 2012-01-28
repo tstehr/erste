@@ -1,0 +1,52 @@
+\documentclass[]{papertex}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+%\nedition{1}{WS 2011/12}
+
+%% Trennregeln
+\hyphenation{
+  AStA
+  Mit-be-wohnerIn-nen
+  Pro-fessorInnen
+  erwischt
+  viiieel
+  y-Nummer
+  Uniaccount
+}
+\usepackage{multicol}
+
+\begin{document}
+
+  \begin{multicols}{2}
+  
+  %\setcounter{page}{1000} % doofe warning wegmachen
+  \input{texte/titelblatt}
+  \thispagestyle{empty}
+  \begin{figure*}[t]
+    \label{plan}
+    \centering{\includegraphics[angle=90, width=\textwidth]{bilder/plan.pdf}}
+    Weitere Campuskarten sind auf Seite \pageref{campuskarte} aufgelistet.
+  \end{figure*}
+  \clearpage
+  \setcounter{page}{1}
+  \input{texte/vorwort}
+\end{multicols}
+  \newpage
+  %Inhlatsverzeichnis
+  \clearpage
+  \newpage
+    \begin{multicols}{2}
+  \include{texte/erstetage/index}
+  \include{texte/studienplan/index}
+  \include{texte/bachelor/index}
+  \include{texte/master/index} 
+  \include{texte/computer/index}
+  \include{texte/freizeit/index}
+  \include{texte/politik/index}
+  \include{texte/nuetzliches/index}
+  % der letzte der vorherigen Texte endet bereits einspaltig
+  \end{multicols}
+
+\end{document}
