@@ -3,19 +3,18 @@
 # Aufruf: make macht das, was hinter all: steht, bei Bedarf anpassen.
 #         make psA5 macht eine ps-Ausgabe in Din A5 Format.
 #         make clean loescht alles, was neu erzeugt werden kann.
-#         make pdf macht eine pdf-Ausgabe in Din A4 Format.
 #         make view zeigt die dvi-Version auf dem Monitor an.
 # ganz wichtig: die Befehlszeilen muessen mit einem TAB beginnen!!!
 
-MAINFILE = 1-te
+MAINFILE = 1-te_v2
 LATEXVIEW = xdvi
-#PDFVIEW = open "/Volumes/Mac OS X/Applications/Preview.app" 
+PDFVIEW = open "/Volumes/Mac OS X/Applications/Preview.app" 
 
 all: ${MAINFILE}.tex 
 	pdflatex ${MAINFILE}.tex
 #	bibtex ${MAINFILE}.aux
 	pdflatex ${MAINFILE}.tex
-#	$(PDFVIEW) ${MAINFILE}.pdf
+	$(PDFVIEW) ${MAINFILE}.pdf
 
 psA5: ${MAINFILE}.dvi
 	dvips -o ${MAINFILE}.ps ${MAINFILE}.dvi

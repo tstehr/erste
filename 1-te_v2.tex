@@ -20,26 +20,35 @@
 \begin{document}
 
   \begin{multicols}{2}
-  
-  %\setcounter{page}{1000} % doofe warning wegmachen
-  \input{texte/titelblatt}
   \thispagestyle{empty}
-  \begin{figure*}[t]
-    \label{plan}
-    \centering{\includegraphics[angle=90, width=\textwidth]{bilder/plan.pdf}}
-    Weitere Campuskarten sind auf Seite \pageref{campuskarte} aufgelistet.
-  \end{figure*}
+  %\begin{figure*}[t]
+   % \label{plan}
+    %\centering{\includegraphics[angle=90, width=\textwidth]{bilder/plan.pdf}}
+    %Weitere Campuskarten sind auf Seite \pageref{campuskarte} aufgelistet.
+  %\end{figure*}
   \clearpage
   \setcounter{page}{1}
   \input{texte/vorwort}
 \end{multicols}
   \newpage
-  %Inhlatsverzeichnis
+  %Inhaltsverzeichnis
   \clearpage
   \newpage
-    \begin{multicols}{2}
-  \include{texte/erstetage/index}
-  \include{texte/studienplan/index}
+\section{Die ersten Tage}
+\begin{multicols}{2}
+\input{texte/erstetage/termine}
+\input{texte/erstetage/ersticheckliste}
+%\input{texte/erstetage/tutoren} to fix
+ \end{multicols}
+%\newpage
+\section{Studienplan(ung) für jeden}
+%\label{studienplan}
+\begin{multicols}{2}
+\input{texte/studienplan/verantwortung} % Verantwortung
+\input{texte/studienplan/bachmast}  % Bachelor und Master (Herden und Rudel)
+\input{texte/studienplan/bpo}   % Prüfungsordnung
+\input{texte/studienplan/module}  % Module und Co.
+\input{texte/studienplan/grobplan}  % Grobplanung
   \include{texte/bachelor/index}
   \include{texte/master/index} 
   \include{texte/computer/index}
