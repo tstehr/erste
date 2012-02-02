@@ -1,79 +1,54 @@
 \documentclass[]{papertex}
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\usepackage{amssymb}
-\usepackage[T1]{fontenc}
+	\usepackage[utf8]{inputenc}
+	\usepackage{graphicx}
+	\usepackage{amssymb}
+	\usepackage[T1]{fontenc}
+	\usepackage{multicol}
 
-\renewcommand{\familydefault}{\sfdefault}
+	\renewcommand{\familydefault}{\sfdefault}
 
-% Trennregeln
-\hyphenation{
-  AStA
-  Mit-be-wohnerIn-nen
-  Pro-fessorInnen
-  erwischt
-  viiieel
-  y-Nummer
-  Uniaccount
-}
-\usepackage{multicol}
+	% Trennregeln
+	\hyphenation{
+		AStA
+		Mit-be-wohnerIn-nen
+		Pro-fessorInnen
+		erwischt
+		viiieel
+		y-Nummer
+		Uniaccount
+	}
 
 \begin{document}
-  %\begin{multicols}{2}
-  \thispagestyle{empty}
-  %\begin{figure*}[t]
-   % \label{plan}
-    %\centering{\includegraphics[angle=90, width=\textwidth]{bilder/plan.pdf}}
-    %Weitere Campuskarten sind auf Seite \pageref{campuskarte} aufgelistet.
-  %\end{figure*}
-  \clearpage
-  \setcounter{page}{1}
-  \input{texte/vorwort}
-%\end{multicols}
-  \newpage
-  %Inhaltsverzeichnis
-  \clearpage
-  \newpage
-\section{Die ersten Tage}
-%\begin{multicols}{2}
-\input{texte/erstetage/termine}
-\input{texte/erstetage/ersticheckliste}
-%\input{texte/erstetage/tutoren} to fix
- %\end{multicols}
-%\newpage
-\section{Studienplan(ung) für jeden}
-%\label{studienplan}
-%\begin{multicols}{2}
-\input{texte/studienplan/verantwortung} % Verantwortung
-\input{texte/studienplan/bachmast}  % Bachelor und Master (Herden und Rudel)
-\input{texte/studienplan/bpo}   % Prüfungsordnung
-\input{texte/studienplan/module}  % Module und Co.
-\input{texte/studienplan/grobplan}  % Grobplanung
-  \include{texte/bachelor/index}
-  \include{texte/master/index} 
-  \include{texte/computer/index}
- % %\end{multicols}
-\newpage
-\section{Freizeit}
-% \includegraphics[width=\textwidth]{bilder/comics/uf008003.png}
-%\begin{multicols}{2}
-
-\input{texte/freizeit/locations}
-\newpage
-\input{texte/freizeit/tagebuch}
-
-%\end{multicols}
-\newpage
-\label{politik}
-\section{Gruppen und Unipolitik}
-%\begin{multicols}{2}
-
-\input{texte/politik/fachgruppe}
-\input{texte/politik/gremien2}
-\input{texte/politik/unpolitisch}
-\input{texte/politik/studiengebuehren}
-  \include{texte/nuetzliches/index}
-  % der letzte der vorherigen Texte endet bereits einspaltig
-  % %\end{multicols}
-
+	\thispagestyle{empty}
+	\clearpage
+	\setcounter{page}{1}
+	\input{texte/vorwort} %Import ohne Seitenumbruch
+	\newpage
+	\section{Die ersten Tage}
+		\input{texte/erstetage/termine}
+		\input{texte/erstetage/ersticheckliste}
+	\section{Studienplan(ung) für jeden}
+		\label{studienplan}
+		\input{texte/studienplan/verantwortung} % Verantwortung
+		\input{texte/studienplan/bachmast}  % Bachelor und Master (Herden und Rudel)
+		\input{texte/studienplan/bpo}   % Prüfungsordnung
+		\input{texte/studienplan/module}  % Module und Co.
+		\input{texte/studienplan/grobplan}  % Grobplanung
+	\include{texte/bachelor/index} %Import mit Seitenumbruch
+	\include{texte/master/index} 
+	\include{texte/computer/index}
+	\newpage
+	\section{Freizeit}
+		\label{freizeit}
+		\input{texte/freizeit/locations}
+		\newpage
+		\input{texte/freizeit/tagebuch}
+	\newpage
+	\section{Gruppen und Unipolitik}
+		\label{politik}
+		\input{texte/politik/fachgruppe}
+		\input{texte/politik/gremien2}
+		\input{texte/politik/unpolitisch}
+		\input{texte/politik/studiengebuehren}	
+	\include{texte/nuetzliches/index}
 \end{document}
