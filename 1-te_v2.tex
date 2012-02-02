@@ -2,10 +2,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{amssymb}
+\usepackage[T1]{fontenc}
 
-%\nedition{1}{WS 2011/12}
+\renewcommand{\familydefault}{\sfdefault}
 
-%% Trennregeln
+% Trennregeln
 \hyphenation{
   AStA
   Mit-be-wohnerIn-nen
@@ -18,8 +19,7 @@
 \usepackage{multicol}
 
 \begin{document}
-
-  \begin{multicols}{2}
+  %\begin{multicols}{2}
   \thispagestyle{empty}
   %\begin{figure*}[t]
    % \label{plan}
@@ -29,21 +29,21 @@
   \clearpage
   \setcounter{page}{1}
   \input{texte/vorwort}
-\end{multicols}
+%\end{multicols}
   \newpage
   %Inhaltsverzeichnis
   \clearpage
   \newpage
 \section{Die ersten Tage}
-\begin{multicols}{2}
+%\begin{multicols}{2}
 \input{texte/erstetage/termine}
 \input{texte/erstetage/ersticheckliste}
 %\input{texte/erstetage/tutoren} to fix
- \end{multicols}
+ %\end{multicols}
 %\newpage
 \section{Studienplan(ung) für jeden}
 %\label{studienplan}
-\begin{multicols}{2}
+%\begin{multicols}{2}
 \input{texte/studienplan/verantwortung} % Verantwortung
 \input{texte/studienplan/bachmast}  % Bachelor und Master (Herden und Rudel)
 \input{texte/studienplan/bpo}   % Prüfungsordnung
@@ -52,21 +52,21 @@
   \include{texte/bachelor/index}
   \include{texte/master/index} 
   \include{texte/computer/index}
-  \end{multicols}
+ % %\end{multicols}
 \newpage
 \section{Freizeit}
 % \includegraphics[width=\textwidth]{bilder/comics/uf008003.png}
-\begin{multicols}{2}
+%\begin{multicols}{2}
 
 \input{texte/freizeit/locations}
 \newpage
 \input{texte/freizeit/tagebuch}
 
-\end{multicols}
+%\end{multicols}
 \newpage
 \label{politik}
 \section{Gruppen und Unipolitik}
-\begin{multicols}{2}
+%\begin{multicols}{2}
 
 \input{texte/politik/fachgruppe}
 \input{texte/politik/gremien2}
@@ -74,6 +74,6 @@
 \input{texte/politik/studiengebuehren}
   \include{texte/nuetzliches/index}
   % der letzte der vorherigen Texte endet bereits einspaltig
-  % \end{multicols}
+  % %\end{multicols}
 
 \end{document}

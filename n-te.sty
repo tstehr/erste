@@ -1,7 +1,7 @@
-%% This file provides commands to assist in
-%% layout off the n-te
-%% As a general rule the commands should begin with
-%% 'n' as to not conflict with other commands.
+% This file provides commands to assist in
+% layout off the n-te
+% As a general rule the commands should begin with
+% 'n' as to not conflict with other commands.
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{n-te}
 
@@ -19,19 +19,19 @@
 \fi
 \usepackage[right]{eurosym}
 
-%% \renewcommand{\dbltopfraction}{0.9}
-%% Internal variables for storing
-\newcommand\@ntecount{}  %% index
-\newcommand\@nteterm{}   %% term
+% \renewcommand{\dbltopfraction}{0.9}
+% Internal variables for storing
+\newcommand\@ntecount{}  % index
+\newcommand\@nteterm{}   % term
 
-%% Add 1 to current pagenumber.
-%% IMPORTANT: Affects the current page,
-%% not just the following ones.
+% Add 1 to current pagenumber.
+% IMPORTANT: Affects the current page,
+% not just the following ones.
 \newcommand{\naddpage}[0]{\stepcounter{page}}
 
-%% Handle the display of the author of the
-%% Article.
-%% 1 Author's name
+% Handle the display of the author of the
+% Article.
+% 1 Author's name
 \newcommand{\nauthor}[1]
 {
   \begin{flushright}
@@ -39,10 +39,10 @@
   \end{flushright}
 }
 
-%% Handle the display of the author of the
-%% Article.
-%% 1 Author's name
-%% 2 Author's email address.
+% Handle the display of the author of the
+% Article.
+% 1 Author's name
+% 2 Author's email address.
 \newcommand{\nauthormail}[2]{
   \begin{flushright}
   {\bfseries\small#1}\\
@@ -50,13 +50,13 @@
   \end{flushright}
 }
 
-%% Set the number of the n-te
-%% Adjusts the headings for the TOC and the page heads
-%% 1 the number of the n-te (just the number!)
-%% 2 the term of the n-te
+% Set the number of the n-te
+% Adjusts the headings for the TOC and the page heads
+% 1 the number of the n-te (just the number!)
+% 2 the term of the n-te
 \newcommand\nedition[2]{
-	\renewcommand\@ntecount{#1}  %% store number
-	\renewcommand\@nteterm{#2}  %% store term
+	\renewcommand\@ntecount{#1}  % store number
+	\renewcommand\@nteterm{#2}  % store term
 	\markboth{Die \@ntecount{-ste}}{\@nteterm}  % set page heads
 	\renewcommand\contentsname{\@ntecount{-ste} im "Uberblick}  % set toc heading
 	
@@ -72,17 +72,17 @@
   \end{figure}
 }
 
-%% Meta-information that assist in the
-%% structure of the TOC
-%% Use it at the point in the text that
-%% the new section starts
+% Meta-information that assist in the
+% structure of the TOC
+% Use it at the point in the text that
+% the new section starts
 \newcommand{\nmetatoc}[1]{
   \addtocontents{toc}{
     {\large\bfseries#1}
   }
 }
 
-%% \npicture[width][relpicwidth]{pic}{caption}
+% \npicture[width][relpicwidth]{pic}{caption}
 \long\def\npicture@[#1][#2]#3#4{%
   \parbox{#1} {
     \includegraphics[width=#2\linewidth]{{#3}}\\
@@ -101,14 +101,14 @@
 %   \end{figure}
 %}
 
-%% Prints a formatted n-te
+% Prints a formatted n-te
 \newcommand\nte{\textbf{\textit{n}-te}}
 \newcommand\nten{\textbf{\textit{n}-ten}}
 
-%% Generate the table of contents
+% Generate the table of contents
 \newcommand{\ntoc}{\tableofcontents}
 
-%% URLs
+% URLs
 \newcommand{\nurl}[1]{%
   \url{#1}%
 }
@@ -118,17 +118,17 @@
 }
 
 
-%% Emphasize questions in interviews
+% Emphasize questions in interviews
 \newcommand{\nquestion}[1]{
   \textbf{#1}
 }
 
-%%
+%
 \newcommand{\nroom}[1]{\textbf{#1}}
 
-%% Change the name of the "abstract" environment
+% Change the name of the "abstract" environment
 \renewcommand{\abstractname}{Editorial}
 
 \endinput
-%%
-%% End of file `n-te.sty'.
+%
+% End of file `n-te.sty'.

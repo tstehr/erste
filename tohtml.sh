@@ -2,11 +2,11 @@ rm -r htmlout
 mkdir -p htmlout/bilder
 
 # We need to have converted jpg's in our input before we can convert it
-for i in `find bilder -iname "*.pdf"`; do convert -density 150 "$i" ${i%%.pdf}.png; done
+for i in `find bilder -iname "*.pdf"`; do convert -density 150 "$i" ${i%.pdf}.png; done
 # The script also needs an EPS version, god knows why
-for i in `find bilder -iname "*.pdf"`; do convert -density 150 "$i" ${i%%.pdf}.eps; done
+for i in `find bilder -iname "*.pdf"`; do convert -density 150 "$i" ${i%.pdf}.eps; done
 
-# or: for i in *.pdfjpg; do mv $i ${i%%.pdfjpg}.jpg; done
+# or: for i in *.pdfjpg; do mv $i ${i%.pdfjpg}.jpg; done
 
 
 # The htlatex script is some nasty garbage, so we need to work arround some limitations
