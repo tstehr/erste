@@ -1,4 +1,4 @@
-\begin{multicols}{2}
+%\begin{multicols}{2}
 \subsection{Linux}
 	\label{linux}
 	Als Informatiker befasst man sich oft mit abstrakten und allgemeinen Konzepten, die unabhängig von konkreten Betriebssystemen gültig sind. Aber sobald man sich an einen Rechner setzt, hat man es dann doch mit einem konkreten System zu tun, und innerhalb der Rechnerpools an der Uni ist dies meist die eine oder andere Linux-Version. Du wirst also im Studium nicht drum herum kommen, etwas Erfahrung damit zu sammeln.
@@ -6,16 +6,36 @@
 	Auf deinem eigenen Rechner kannst du natürlich machen, was immer du möchtest, aber viele von uns bevorzugen auch dort Linux oder ein anderes Unix-artiges System. Der Umstieg ist gar nicht so schwer wie man denkt bzw. wie er vor 10 Jahren mal war, und dank Live CDs, Dual Boot und Virtualisierung kannst du sogar Linux und dein bisheriges System parallel laufen lassen und somit ganz unverbindlich reinschnuppern.
 
 	\subsubsection{Einstiegshilfen}
-		Falls du mit Linux bisher keine Erfahrung hast, könnte der Studienbeginn der passende Zeitpunkt sein. Die Fachgruppe veranstaltet von Zeit zu Zeit Linux-Installationsparties die dir beim Einstieg helfen. Wenn dann im Alltag irgendein Problem auftritt, ist der nächste Linux-Guru meist nur wenige Meter entfernt.
+		Falls du mit Linux bisher keine Erfahrung hast, könnte der Studienbeginn der passende Zeitpunkt sein. 
+		%Die Fachgruppe veranstaltet von Zeit zu Zeit Linux-Installationsparties die dir beim Einstieg helfen.
+		
+		%Wenn dann im Alltag irgendein Problem auftritt, ist der nächste Linux-Guru meist nur wenige Meter entfernt.
 
 		Auch wenn du nocht nicht 100\% sicher bist, wohin die Reise geht, solltest du also vor dem Kauf eines neuen Rechner sicherheitshalber checken, ob die Hardware Linux-Kompatibel ist.
 
 	\subsubsection{SSH - Zugriff aus der Ferne}
-		Um vom heimischen PC aus Zugriff auf deinen Uniaccount zu haben, kannst du von Linux aus ssh benutzen. Für Windowsbenutzer gibt es zwei nette kleine Tools, Putty und WinSCP. Deinen Uniaccount erreichst du über den Server \texttt{rzstudio.rz.tu-bs.de}.
+		Um vom heimischen PC aus Zugriff auf deinen Uniaccount
+		zu haben, kannst du von Linux aus ssh benutzen. Für
+		Windowsbenutzer gibt es drei nette kleine Tools, Putty,
+		Xming und WinSCP. Deinen Uniaccount erreichst du über den Server \texttt{rzstudio.rz.tu-bs.de}.
 
 		\begin{description}
-			\item[Putty] stellt dir eine Shell auf dem UNIX"~Rechner bereit. Damit kannst du so auf deinem Rechner arbeiten, als würdest du direkt auf dem Server arbeiten (tust du ja auch). Um auch grafische Programme starten zu können, musst du noch einen X"~Server für Windows installieren, z.B. X-Deep32.
-			\item[WinSCP] ist ein Tool, das einem FTP"~Client ähnelt. Mit diesem kannst du Dateien von und zu deinem Uniaccount kopieren. Der Vorteil ist, dass die Übertragung verschlüsselt ist und Passwörter somit nicht abgehört werden können.
+			\item[Putty] stellt dir eine Shell auf dem
+			  UNIX"~Rechner bereit. Damit kannst du so auf
+			  deinem Rechner arbeiten, als würdest du direkt
+			  auf dem Server arbeiten (tust du ja auch).  Download:
+			  \url{http://www.putty.org}
+			\item[Xming] Um
+			  auch grafische Programme starten zu können,
+			  musst du noch einen X"~Server für Windows
+			  installieren, z.B. Xming. Download:
+			  \url{http://sourceforge.net/projects/xming/}
+			\item[WinSCP] ist ein Tool, das einem
+			  FTP"~Client ähnelt. Mit diesem kannst du
+			  Dateien von und zu deinem Uniaccount kopieren.
+			  Der Vorteil ist, dass die Übertragung
+			  verschlüsselt ist und Passwörter somit nicht
+			  abgehört werden können. Download: \url{http://www.putty.org}
 		\end{description}
 
 		Zu allen in diesem Text angesprochenen und noch zu vielen anderen Computerproblemen mehr gibt es Informationen im Heft \emph{Don't Panic}, das kostenlos im Rechenzentrum erhältlich ist. Nimm es dir gleich mit, wenn du deine y"~Nummer beantragst.
@@ -32,4 +52,4 @@
 		\end{description}
 
 		Für Studierende ohne breitbandigen Netzzugang sind sicherlich die CDs nützlich, die sich jede/r im IT Service-Desk\footnote{http://www.tu-braunschweig.de/it/service-desk} im Gauß-IT-Zentrum, \textbf{Raum 017}, ausleihen kann. Dort stehen eigentlich immer die neusten Versionen von SuSE, Mandrake, Fedora, Gentoo, Debian und Knoppix sowie diverse ältere Distributionen zur Verfügung. Dank eines DVD-Brenners können inzwischen auch --~soweit vorhanden (SuSE, Knoppix)~-- die DVD-Versionen verliehen werden. Auf der sicheren Seite ist, wer vorher einen Abholtermin vereinbart, damit die gewünschte Distribution garantiert greifbar ist: 0531/391-5555.
-\end{multicols}
+%\end{multicols}
