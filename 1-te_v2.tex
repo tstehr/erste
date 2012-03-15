@@ -49,7 +49,27 @@
 		\input{texte/studienplan/bpo}   % Prüfungsordnung
 		\input{texte/studienplan/module}  % Module und Co.
 		\input{texte/studienplan/grobplan}  % Grobplanung
-	\include{texte/bachelor/index}
+	\newpage
+	\section{Spezielles im Bachelor}
+		\label{bachelor}
+		\input{texte/bachelor/profs}
+		\input{texte/bachelor/interview}
+		\input{texte/bachelor/studienplan}
+		\input{texte/bachelor/quovadis}
+		\begin{minipage}{1.0\linewidth}
+			\begin{center}     
+			\label{musterstudienplan}
+			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/Musterstudienplan_BScInformatik_WS_02.pdf}
+			%\includegraphics[totalheight=\textheight, width=\textwidth ]{bilder/FG_Vorschlag_BeginSS}
+			\end{center}  
+		\end{minipage}
+		\newpage
+		\begin{minipage}{1.0\linewidth}
+		\begin{center} 
+  			\includegraphics[angle=90,totalheight=\textheight, width=\textwidth ]{texte/bachelor/studienplan_neu.pdf}
+  			\label{studienplan_neu}
+		\end{center}
+		\end{minipage}
 	\include{texte/master/index} 
 	\include{texte/computer/index}
 	\newpage
