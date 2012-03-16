@@ -8,13 +8,20 @@
 
 MAINFILE = 1-te_v2
 LATEXVIEW = xdvi
-PDFVIEW = open "/Volumes/Mac OS X/Applications/Preview.app" 
+PDFVIEW = xpdf
+#open "/Volumes/Mac OS X/Applications/Preview.app" 
 
-all: ${MAINFILE}.tex 
+all: ${MAINFILE}.pdf
+#	pdflatex ${MAINFILE}.tex
+#	bibtex ${MAINFILE}.aux
+#	pdflatex ${MAINFILE}.tex
+	$(PDFVIEW) ${MAINFILE}.pdf
+
+
+pdf: ${MAINFILE}.tex
 	pdflatex ${MAINFILE}.tex
 #	bibtex ${MAINFILE}.aux
 	pdflatex ${MAINFILE}.tex
-	$(PDFVIEW) ${MAINFILE}.pdf
 
 psA5: ${MAINFILE}.dvi
 	dvips -o ${MAINFILE}.ps ${MAINFILE}.dvi
