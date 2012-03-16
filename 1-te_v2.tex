@@ -12,6 +12,7 @@
 	\usepackage{amssymb}
 	\usepackage[T1]{fontenc}
 	\usepackage{multicol}
+	%\usepackage{hyperref}
 	\usepackage[babel,german=quotes]{csquotes}
 
 	\renewcommand{\familydefault}{\sfdefault}
@@ -53,16 +54,20 @@
 	\include{texte/master/index} 
 	\include{texte/computer/index}
 	\newpage
-	\section{Freizeit}
-		\label{freizeit}
-		\input{texte/freizeit/locations}
+%	\section{Freizeit}
+%		\label{freizeit}
+%		\input{texte/freizeit/locations}
 		%\newpage
-		%\input{texte/freizeit/tagebuch} % inhaltlich fehlerhaft überarbeiten oder ganz raus...
-	\newpage
-	\section{Gruppen und Unipolitik}
+%		%\input{texte/freizeit/tagebuch} % inhaltlich fehlerhaft überarbeiten oder ganz raus...
+%	\newpage
+	\section{Studentische Vereinigungen und Unipolitik}
 		\label{politik}
-		\input{texte/politik/fachgruppe}
-		\input{texte/politik/gremien2}
+		\begin{multicols}{2}
+			\input{texte/vereinigungen}
+			\input{texte/politik/fachgruppe}
+			\input{texte/politik/gremien2}
+
+		\end{multicols}
 		%\input{texte/politik/unpolitisch} % redaktionall fragwürdig
 		%\input{texte/politik/studiengebuehren}	%da momentan keine einhellige meinung vorherrsct erstmal rauslassen
 	\newpage
@@ -70,6 +75,9 @@
 		\label{sonstiges}
 		\input{texte/nuetzliches/ansprechpartner}
 		\input{texte/nuetzliches/lernraeume}
-		\input{texte/nuetzliches/semesterticket}
+		% rausgenommen, da scheiße zu lesen und an anderer
+		% stelle dokumentiert (jst)
+
+		%\input{texte/nuetzliches/semesterticket}
 		\input{texte/impressum}
 \end{document}
