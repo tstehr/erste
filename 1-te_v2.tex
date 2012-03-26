@@ -53,7 +53,6 @@
 	\newpage
 	\section{Spezielles im Bachelor}
 		\label{bachelor}
-
 		\input{texte/bachelor/profs}
 		\input{texte/bachelor/interview}
 		\newpage
@@ -61,6 +60,9 @@
 		\input{texte/bachelor/studienplan}
 		\input{texte/bachelor/quovadis}
 		\end{multicols}
+		\begin{center}
+		\includegraphics[totalheight=6cm]{bilder/XKCD/travelling_salesman}
+		\end{center}
 		\begin{minipage}{1.0\linewidth}
 			\begin{center}     
 			\label{musterstudienplan}
@@ -76,27 +78,28 @@
 		\end{center}
 		\end{minipage}
 	\include{texte/master/index}
-	\begin{multicols}{2} 
 	\include{texte/computer/index}
-	\end{multicols}
-	\newpage
-	\section{Freizeit}
-		\label{freizeit}
-		\input{texte/freizeit/locations}
-		%\newpage
-		%\input{texte/freizeit/tagebuch} % inhaltlich fehlerhaft überarbeiten oder ganz raus...
 	\newpage
 	\section{Gruppen und Unipolitik}
 		\label{politik}
+		\begin{multicols}{2}
 		\input{texte/politik/fachgruppe}
-		\input{texte/politik/gremien2}
-		%\input{texte/politik/unpolitisch} % redaktionall fragwürdig
-		%\input{texte/politik/studiengebuehren}	%da momentan keine einhellige meinung vorherrsct erstmal rauslassen
+		\input{texte/politik/gremien}
+		\end{multicols}
 	\newpage
 	\section{Sonstiges}
 		\label{sonstiges}
+		\begin{center}
+		\includegraphics[totalheight=3cm]{bilder/XKCD/random_number}
+		\end{center}
+		\begin{multicols}{2}
+		%\input{texte/nuetzliches/studgruppen}
 		\input{texte/nuetzliches/ansprechpartner}
+		\end{multicols}
 		\input{texte/nuetzliches/lernraeume}
-		\input{texte/nuetzliches/semesterticket}
+		\begin{multicols}{2}
+		\input{texte/nuetzliches/campus}
+		\end{multicols}
+		\newpage
 		\input{texte/impressum}
 \end{document}
