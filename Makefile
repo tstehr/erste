@@ -12,10 +12,10 @@ PDFVIEW = xpdf
 #open "/Volumes/Mac OS X/Applications/Preview.app" 
 
 all: ${MAINFILE}.pdf
-#	pdflatex ${MAINFILE}.tex
-#	bibtex ${MAINFILE}.aux
-#	pdflatex ${MAINFILE}.tex
-	$(PDFVIEW) ${MAINFILE}.pdf
+	pdflatex ${MAINFILE}.tex
+	bibtex ${MAINFILE}.aux
+	pdflatex ${MAINFILE}.tex
+#	$(PDFVIEW) ${MAINFILE}.pdf
 
 
 pdf: ${MAINFILE}.tex

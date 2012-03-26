@@ -12,7 +12,6 @@
 	\usepackage{amssymb}
 	\usepackage[T1]{fontenc}
 	\usepackage{multicol}
-	%\usepackage{hyperref}
 	\usepackage[babel,german=quotes]{csquotes}
 
 	\renewcommand{\familydefault}{\sfdefault}
@@ -40,54 +39,57 @@
 	\include{texte/vorwort}
 	\newpage
 	\section{Die ersten Tage}
-		%\input{texte/erstetage/termine} Raus da auf Miniausgabe und in Erstie-Infozettel enthalten, muss dann nciht aktualisiert werden
 		\input{texte/erstetage/ersticheckliste}
 	\newpage
 	\section{Studienplan(ung) für jeden}
 		\label{studienplan}
+		\begin{multicols}{2}
 		\input{texte/studienplan/verantwortung} % Verantwortung
 		\input{texte/studienplan/bachmast}  % Bachelor und Master (Herden und Rudel)
 		\input{texte/studienplan/bpo}   % Prüfungsordnung
 		\input{texte/studienplan/module}  % Module und Co.
 		\input{texte/studienplan/grobplan}  % Grobplanung
+		\end{multicols}
 	\newpage
 	\section{Spezielles im Bachelor}
 		\label{bachelor}
+
 		\input{texte/bachelor/profs}
 		\input{texte/bachelor/interview}
+		\newpage
+		\begin{multicols}{2}
 		\input{texte/bachelor/studienplan}
 		\input{texte/bachelor/quovadis}
+		\end{multicols}
 		\begin{minipage}{1.0\linewidth}
 			\begin{center}     
 			\label{musterstudienplan}
-			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/Musterstudienplan_BScInformatik_WS_02.pdf}
+			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/Musterstudienplan_BScInformatik_WS.pdf}
 			%\includegraphics[totalheight=\textheight, width=\textwidth ]{bilder/FG_Vorschlag_BeginSS}
 			\end{center}  
 		\end{minipage}
 		\newpage
 		\begin{minipage}{1.0\linewidth}
 		\begin{center} 
-  			\includegraphics[angle=90,totalheight=\textheight, width=\textwidth ]{texte/bachelor/studienplan_neu.pdf}
+  			\includegraphics[angle=90,totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/studienplan_bsc.pdf}
   			\label{studienplan_neu}
 		\end{center}
 		\end{minipage}
-	\include{texte/master/index} 
+	\include{texte/master/index}
+	\begin{multicols}{2} 
 	\include{texte/computer/index}
+	\end{multicols}
 	\newpage
-%	\section{Freizeit}
-%		\label{freizeit}
-%		\input{texte/freizeit/locations}
+	\section{Freizeit}
+		\label{freizeit}
+		\input{texte/freizeit/locations}
 		%\newpage
-%		%\input{texte/freizeit/tagebuch} % inhaltlich fehlerhaft überarbeiten oder ganz raus...
-%	\newpage
-	\section{Studentische Vereinigungen und Unipolitik}
+		%\input{texte/freizeit/tagebuch} % inhaltlich fehlerhaft überarbeiten oder ganz raus...
+	\newpage
+	\section{Gruppen und Unipolitik}
 		\label{politik}
-		\begin{multicols}{2}
-			\input{texte/vereinigungen}
-			\input{texte/politik/fachgruppe}
-			\input{texte/politik/gremien2}
-
-		\end{multicols}
+		\input{texte/politik/fachgruppe}
+		\input{texte/politik/gremien2}
 		%\input{texte/politik/unpolitisch} % redaktionall fragwürdig
 		%\input{texte/politik/studiengebuehren}	%da momentan keine einhellige meinung vorherrsct erstmal rauslassen
 	\newpage
@@ -95,10 +97,6 @@
 		\label{sonstiges}
 		\input{texte/nuetzliches/ansprechpartner}
 		\input{texte/nuetzliches/lernraeume}
-		% rausgenommen, da scheiße zu lesen und an anderer
-		% stelle dokumentiert (jst)
-
-		%\input{texte/nuetzliches/semesterticket}
-	      %\end{multicols}
+		\input{texte/nuetzliches/semesterticket}
 		\input{texte/impressum}
 \end{document}
