@@ -1,0 +1,104 @@
+%Hauptdokument der Erstsemesterzeitschrift "Erste" der Fachgruppe Informatik
+% TO DO:
+% - Anpassen der Anrede: du
+% - Rechtschreibkorrektur
+% - Aktualisierung von Beiträgen
+% - Recherche nach neuen Bildern
+% - Rechteklärung mit den Profs wegen Fotos
+% - 
+\documentclass[]{papertex}
+	\usepackage[utf8]{inputenc}
+	\usepackage{graphicx}
+	\usepackage{amssymb}
+	\usepackage[T1]{fontenc}
+	\usepackage{multicol}
+	\usepackage[babel,german=quotes]{csquotes}
+
+	\renewcommand{\familydefault}{\sfdefault}
+
+	\clubpenalty = 10000
+	\widowpenalty = 10000 
+	\displaywidowpenalty = 10000
+
+	% Trennregeln
+	\hyphenation{
+		AStA
+		Mit-be-wohnerIn-nen
+		Pro-fessorInnen
+		erwischt
+		viiieel
+		y-Nummer
+		Uniaccount
+	}
+
+\begin{document}
+	\thispagestyle{empty}
+	\clearpage
+	\setcounter{page}{1}
+	\tableofcontents
+	\include{texte/vorwort}
+	\newpage
+	\section{Die ersten Tage}
+		\input{texte/erstetage/ersticheckliste}
+	\newpage
+	\section{Studienplan(ung) für jeden}
+		\label{studienplan}
+		\begin{multicols}{2}
+		\input{texte/studienplan/verantwortung} % Verantwortung
+		\input{texte/studienplan/bachmast}  % Bachelor und Master (Herden und Rudel)
+		\input{texte/studienplan/bpo}   % Prüfungsordnung
+		\input{texte/studienplan/module}  % Module und Co.
+		\input{texte/studienplan/grobplan}  % Grobplanung
+		\end{multicols}
+	\newpage
+	\section{Spezielles im Bachelor}
+		\label{bachelor}
+		\input{texte/bachelor/profs_ws} %je nach Semester profs_ss / profs_ws
+		\input{texte/bachelor/interview}
+		\newpage
+		\begin{multicols}{2}
+		\input{texte/bachelor/studienplan}
+		\input{texte/bachelor/quovadis}
+		\end{multicols}
+		\begin{center}
+		\includegraphics[totalheight=6cm]{bilder/XKCD/travelling_salesman}
+		\end{center}
+		\begin{minipage}{1.0\linewidth}
+			\begin{center}     
+			\label{musterstudienplan}
+			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/Musterstudienplan_BScInformatik_WS.pdf}
+			\end{center}  
+		\end{minipage}
+		\newpage
+		\begin{minipage}{1.0\linewidth}
+		\begin{center} 
+  			\includegraphics[angle=90,totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/studienplan_bsc.pdf
+  			\label{studienplan_neu}
+		\end{center}
+		\end{minipage}
+	\include{texte/master/index}
+	\include{texte/computer/index}
+	\newpage
+	\section{Gruppen und Unipolitik}
+		\label{politik}
+		\begin{multicols}{2}
+		\input{texte/politik/fachgruppe}
+		\input{texte/politik/gremien}
+		\end{multicols}
+	\newpage
+	\section{Sonstiges}
+		\label{sonstiges}
+		\begin{center}
+		\includegraphics[totalheight=3cm]{bilder/XKCD/random_number}
+		\end{center}
+		\begin{multicols}{2}
+		%\input{texte/nuetzliches/studgruppen}
+		\input{texte/nuetzliches/ansprechpartner}
+		\end{multicols}
+		\input{texte/nuetzliches/lernraeume}
+		\begin{multicols}{2}
+		\input{texte/nuetzliches/campus}
+		\end{multicols}
+		\newpage
+		\input{texte/impressum}
+\end{document}
