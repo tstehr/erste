@@ -6,41 +6,28 @@
 #         make view zeigt die dvi-Version auf dem Monitor an.
 # ganz wichtig: die Befehlszeilen muessen mit einem TAB beginnen!!!
 
-MAINFILE = 1-te_v2
+
 LATEXVIEW = xdvi
 PDFVIEW = xpdf
 #open "/Volumes/Mac OS X/Applications/Preview.app" 
 
-all: ${MAINFILE}.pdf
-	pdflatex ${MAINFILE}.tex
-	bibtex ${MAINFILE}.aux
-	pdflatex ${MAINFILE}.tex
+ws: 1-te_ws.pdf
+	pdflatex 1-te_ws.tex
+	bibtex 1-te_ws.aux
+	pdflatex 1-te_ws.tex
 #	$(PDFVIEW) ${MAINFILE}.pdf
 
+ss: 1-te_ss.pdf
+	pdflatex 1-te_ss.tex
+	bibtex 1-te_ss.aux
+	pdflatex 1-te_ss.tex
 
-pdf: ${MAINFILE}.tex
-	pdflatex ${MAINFILE}.tex
-#	bibtex ${MAINFILE}.aux
-	pdflatex ${MAINFILE}.tex
+cleanss: distclean
+	rm -f 1-te_ss.{dvi,ps,pdf}	
 
-psA5: ${MAINFILE}.dvi
-	dvips -o ${MAINFILE}.ps ${MAINFILE}.dvi
-	psnup -2 ${MAINFILE}.ps > ${MAINFILE}A5.ps
-	rm ${MAINFILE}.ps
+cleanws: distclean
+	rm -f 1-te_ws.{dvi,ps,pdf}	
 
-view: ${MAINFILE}.dvi
-	${LATEXVIEW} ${MAINFILE}.dvi
-
-tgz: distclean
-	cd ..; tgz ${MAINFILE}.tgz ${MAINFILE}; \
-        mv ${MAINFILE}.tgz ${MAINFILE}
-
-dvi: ${MAINFILE}.tex 
-	latex ${MAINFILE}.tex
-	latex ${MAINFILE}.tex
-
-clean: distclean
-	rm -f $(MAINFILE).{dvi,ps,pdf}	
 distclean:
 	rm -f *.{aux,log,toc,out}
 	rm -f *~
