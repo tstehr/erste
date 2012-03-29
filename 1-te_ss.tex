@@ -5,7 +5,9 @@
 	\usepackage{amssymb}
 	\usepackage[T1]{fontenc}
 	\usepackage{multicol}
+	\usepackage[ngerman]{babel}
 	\usepackage[babel,german=quotes]{csquotes}
+	
 
 	\renewcommand{\familydefault}{\sfdefault}
 
@@ -59,7 +61,7 @@
 		\begin{minipage}{1.0\linewidth}
 			\begin{center}     
 			\label{musterstudienplan}
-			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ss/Musterstudienplan_BScInformatik_SS.pdf}
+			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ss/bscinformatikssneu42011.pdf}
 			\end{center}  
 		\end{minipage}
 		\newpage
@@ -72,7 +74,7 @@
 	\include{texte/master/index}
 	\include{texte/computer/index}
 	\newpage
-	\section{Gruppen und Unipolitik}
+	\section{Hochschulpolitik}
 		\label{politik}
 		\begin{multicols}{2}
 		\input{texte/politik/fachgruppe}
@@ -87,11 +89,10 @@
 		\begin{multicols}{2}
 		%\input{texte/nuetzliches/studgruppen}
 		\input{texte/nuetzliches/ansprechpartner}
-		\end{multicols}
-		\input{texte/nuetzliches/lernraeume}
-		\begin{multicols}{2}
 		\input{texte/nuetzliches/campus}
 		\end{multicols}
+		\newpage
+		\input{texte/nuetzliches/lernraeume}
 		\newpage
 		\input{texte/impressum}
 \end{document}
