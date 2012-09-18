@@ -31,29 +31,29 @@
 	\clearpage
 	\setcounter{page}{1}
 	\tableofcontents
-	\include{texte/vorwort}
+	\include{texte/vorwort} %
 	\newpage
 	\section{Die ersten Tage}
-		\input{texte/erstetage/ersticheckliste}
+		\input{texte/erstetage/ersticheckliste} %
 	\newpage
 	\section{Studienplan(ung) für jeden}
 		\label{studienplan}
 		\begin{multicols}{2}
-		\input{texte/studienplan/verantwortung} % Verantwortung
-		\input{texte/studienplan/bachmast}  % Bachelor und Master (Herden und Rudel)
-		\input{texte/studienplan/bpo}   % Prüfungsordnung
-		\input{texte/studienplan/module}  % Module und Co.
-		\input{texte/studienplan/grobplan}  % Grobplanung
+		\input{texte/studienplan/verantwortung} % Verantwortung %
+		\input{texte/studienplan/bachmast}  % Bachelor und Master (Herden und Rudel) %
+		\input{texte/studienplan/bpo}   % Prüfungsordnung %
+		\input{texte/studienplan/module}  % Module und Co. %
+		\input{texte/studienplan/grobplan}  % Grobplanung %
 		\end{multicols}
 	\newpage
 	\section{Spezielles im Bachelor}
 		\label{bachelor}
-		\input{texte/bachelor/profs_ws} %je nach Semester profs_ss / profs_ws
-		\input{texte/bachelor/interview}
+		\input{texte/bachelor/profs_ws} %je nach Semester profs_ss / profs_ws %
+		\input{texte/bachelor/interview} %
 		\newpage
 		\begin{multicols}{2}
-		\input{texte/bachelor/studienplan_ws}
-		\input{texte/bachelor/quovadis_ws}
+		\input{texte/bachelor/studienplan_ws} %
+		\input{texte/bachelor/quovadis_ws} %
 		\end{multicols}
 		\begin{center}
 		\includegraphics[totalheight=6cm]{bilder/XKCD/travelling_salesman}
@@ -61,24 +61,26 @@
 		\begin{minipage}{1.0\linewidth}
 			\begin{center}     
 			\label{musterstudienplan}
-			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/Musterstudienplan_BScInformatik_WS.pdf}
+			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/Musterstudienplan_BScInformatik_WS}
 			\end{center}  
 		\end{minipage}
 		\newpage
 		\begin{minipage}{1.0\linewidth}
 		\begin{center} 
-  			\includegraphics[angle=90,totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/studienplan_bsc.pdf
+  			\includegraphics[angle=90,totalheight=\textheight,
+			width=\textwidth
+			]{bilder/studienplan_bsc_ws/studienplan_bsc.pdf}
   			\label{studienplan_neu}
 		\end{center}
 		\end{minipage}
-	\include{texte/master/index}
-	\include{texte/computer/index}
+	\include{texte/master/index} %
+	\include{texte/computer/index} %
 	\newpage
 	\section{Gruppen und Unipolitik}
 		\label{politik}
 		\begin{multicols}{2}
-		\input{texte/politik/fachgruppe}
-		\input{texte/politik/gremien}
+		\input{texte/politik/fachgruppe} %
+		\input{texte/politik/gremien} %
 		\end{multicols}
 	\newpage
 	\section{Sonstiges}
@@ -88,9 +90,9 @@
 		\end{center}
 		\begin{multicols}{2}
 		%\input{texte/nuetzliches/studgruppen}
-		\input{texte/nuetzliches/ansprechpartner}
+		\input{texte/nuetzliches/ansprechpartner} %
 		\end{multicols}
-		\input{texte/nuetzliches/lernraeume}
+		\input{texte/nuetzliches/lernraeume} %
 		\begin{multicols}{2}
 		\input{texte/nuetzliches/campus}
 		\end{multicols}
