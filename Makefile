@@ -27,6 +27,9 @@ ss: 1-te_ss.pdf
 	#bibtex 1-te_ss.aux
 	pdflatex 1-te_ss.tex
 
+1-te_ss.pdf: 1-te_ss.tex
+	pdflatex 1-te_ss.tex
+
 cleanss: distclean
 	rm -f 1-te_ss.{dvi,ps,pdf}	
 
