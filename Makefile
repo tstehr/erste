@@ -11,9 +11,12 @@ LATEXVIEW = xdvi
 PDFVIEW = xpdf
 #open "/Volumes/Mac OS X/Applications/Preview.app" 
 
-all: ss
+all: ws
 
-ws: 1-te_ws.tex
+ws: 1-te_ws.pdf
+	pdflatex 1-te_ws.tex
+
+1-te_ws.pdf: 1-te_ws.tex
 	pdflatex 1-te_ws.tex
 	#bibtex 1-te_ws.aux
 	pdflatex 1-te_ws.tex
