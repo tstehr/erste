@@ -6,6 +6,7 @@
 	\usepackage[T1]{fontenc}
 	\usepackage{multicol}
 	\usepackage[ngerman]{babel}
+	\usepackage{wrapfig}
 	\usepackage[babel,german=quotes]{csquotes}
 	
 	\usepackage{comment}
@@ -56,13 +57,13 @@
 	\section{Spezielles im Bachelor}
 		\label{bachelor}
 		\input{texte/bachelor/profs_ss}
-		\newpage
-		\input{texte/bachelor/interview}
 		%\newpage
-		\begin{multicols}{2}
+		%\input{texte/bachelor/interview}
+		%\newpage
+		%\begin{multicols}{2}
 		\input{texte/bachelor/studienplan_ss}
 		\input{texte/bachelor/quovadis_ss}
-		\end{multicols}
+	%\end{multicols}
 		%\begin{center}
 		%\end{center}
 		%\begin{comment}
@@ -82,7 +83,7 @@
 		\end{minipage}
 		%\end{commment}
 \end{comment}
-	\include{texte/master/index}
+	\input{texte/master/index}
 	\include{texte/computer/index}
 	\newpage
 	\section{Hochschulpolitik}
@@ -105,5 +106,5 @@
 		\newpage
 		\input{texte/nuetzliches/lernraeume}
 		\newpage
-		\input{texte/impressum}
+		\include{texte/impressum}
 \end{document}
