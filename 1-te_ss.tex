@@ -1,0 +1,86 @@
+%Hauptdokument der Erstsemesterzeitschrift "Erste"-Sommersemester der Fachgruppe Informatik
+\documentclass[]{papertex}
+	\usepackage[utf8]{inputenc}
+	\usepackage{graphicx}
+	\usepackage{amssymb}
+	\usepackage[T1]{fontenc}
+	\usepackage{multicol}
+	\usepackage[ngerman]{babel}
+	\usepackage{wrapfig}
+	\usepackage[babel,german=quotes]{csquotes}
+	
+	\usepackage{comment}
+	\renewcommand{\familydefault}{\sfdefault}
+
+	%\clubpenalty = 10000
+	%\widowpenalty = 10000 
+	%\displaywidowpenalty = 10000
+
+	% Trennregeln
+	\hyphenation{
+		AStA
+		Mit-be-wohnerIn-nen
+		Pro-fessorInnen
+		erwischt
+		viiieel
+		y-Nummer
+		Uniaccount
+	}
+
+\begin{document}
+	\thispagestyle{empty}
+	\clearpage
+	\setcounter{page}{1}
+	\tableofcontents
+	\include{texte/vorwort}
+	\newpage
+	\section{Die ersten Tage}
+		\input{texte/erstetage/ersticheckliste_ss}
+	\newpage
+	\section{Studienplan(ung) für jeden}
+		\label{studienplan}
+		\begin{multicols}{2}
+		\input{texte/studienplan/verantwortung} % Verantwortung
+		\input{texte/studienplan/bachmast}  % Bachelor und Master (Herden und Rudel)
+		\input{texte/studienplan/bpo}   % Prüfungsordnung
+		\input{texte/studienplan/module}  % Module und Co.
+		\input{texte/studienplan/grobplan}  % Grobplanung
+		\input{texte/studienplan/wegweiser}
+		\end{multicols}
+		\vfill
+		\begin{center}
+		\includegraphics[%totalheight=6cm
+		width=\textwidth]{bilder/XKCD/travelling_salesman}
+	      \end{center}
+	      \vfill
+	\newpage
+	\section{Spezielles im Bachelor}
+		\label{bachelor}
+		\input{texte/bachelor/profs_ss}
+		\input{texte/bachelor/studienplan_ss}
+		\input{texte/bachelor/quovadis_ss}
+	\input{texte/master/index}
+	\include{texte/computer/index}
+	\newpage
+	\section{Hochschulpolitik}
+		\label{politik}
+		\begin{multicols}{2}
+		\input{texte/politik/fachgruppe}
+		\input{texte/politik/gremien}
+		\end{multicols}
+	\newpage
+	\section{Sonstiges}
+		\label{sonstiges}
+		\begin{center}
+		\includegraphics[totalheight=3cm]{bilder/XKCD/random_number}
+		\end{center}
+		\begin{multicols}{2}
+		%\input{texte/nuetzliches/studgruppen}
+		\input{texte/nuetzliches/ansprechpartner}
+		\input{texte/nuetzliches/campus}
+		\end{multicols}
+		\newpage
+		\input{texte/nuetzliches/lernraeume}
+		\newpage
+		\include{texte/impressum}
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[12pt]{n-te}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{
+  graphicx,
+  wasysym
+}
+
+\ifpdf
+\usepackage{pdfpages}
+\usepackage[absolute]{textpos}
+\usepackage{graphicx} 
+\fi
+
+\usepackage{amssymb}
+
+\nedition{1}{WS 2011/2012}
+
+%% Trennregeln
+\hyphenation{
+  AStA
+  Mit-be-wohnerIn-nen
+  Pro-fessorInnen
+  erwischt
+  viiieel
+  y-Nummer
+  Uniaccount
+}
+\usepackage{multicol}
+
+% Könnte man demmächst verwenden, wird aber derzeit wohl noch nicht verwendet, sondern vor ort jeweils lang und breit gemacht:
+\newcommand{\nsection}[1]{\end{multicols}\section{#1}\begin{multicols}{2}}
+
+\newcommand{\mehrInfo}[1]{\fbox{$\rightarrow$ #1 }}
+\include{1-te.aux}
+\begin{document}
+
+ % \begin{multicols}{2}
+  
+%  \setcounter{page}{1000} % doofe warning wegmachen
+%  \input{texte/titelblatt}
+%  \thispagestyle{empty}
+%  \begin{figure*}[t]
+%    \label{plan}
+%    \centering\includegraphics[angle=90, width=\textwidth]{bilder/plan.pdf}
+%  \end{figure*}
+%  \clearpage
+%  \setcounter{page}{1}
+
+%  \input{texte/vorwort}
+%\end{multicols}
+\renewcommand{\baselinestretch}{0.85}\normalsize
+  \newpage
+%  \ntoc %% Inhaltsverzeichnis
+  \clearpage
+  \newpage
+
+    \begin{multicols}{2}
+\include{texte/mini/Bachelor/mini_Bachelor_1}
+\end{multicols}
+\includegraphics[totalheight=0.4\textheight, 
+width=\textwidth
+]{texte/nuetzliches/stundenplan}
+\includegraphics[angle=90,
+totalheight=\textheight
+, width=\textwidth]{texte/bachelor/studienplan_neu}
+\newpage
+\begin{multicols}{2}
+\include{texte/mini/Bachelor/mini_Bachelor_2}
+  \end{multicols}
+
+\end{document}
