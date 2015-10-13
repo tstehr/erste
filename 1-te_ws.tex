@@ -36,6 +36,7 @@
 	\newpage
 	\section{Die ersten Tage}
 		\input{texte/erstetage/ersticheckliste_ws} %
+		\input{texte/erstetage/owochews1516}
 	\newpage
 	\section{Studienplan(ung) für jeden}
 		\label{studienplan}
@@ -50,36 +51,50 @@
 	\newpage
 	\section{Spezielles im Bachelor}
 		\label{bachelor}
+		\begin{multicols}{2}
 		\input{texte/bachelor/profs_ws} %je nach Semester profs_ss / profs_ws %
+		\end{multicols}
+		\newpage
 		\input{texte/bachelor/interview} %
 		\newpage
 		\begin{multicols}{2}
 		\input{texte/bachelor/studienplan_ws} %
 		\input{texte/bachelor/quovadis_ws} %
 		\end{multicols}
+		%\vspace{4cm}
 		\begin{center}
 		\includegraphics[totalheight=6cm]{bilder/XKCD/travelling_salesman}
 		\end{center}
-		\begin{minipage}{1.0\linewidth}
+		\begin{minipage}[H]{1.0\linewidth}
 			\begin{center}     
 			\label{musterstudienplan}
 			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/muster_erste_ws-crop}
 			\end{center}  
 		\end{minipage}
 		\newpage
-		\begin{minipage}{1.0\linewidth}
+		\begin{minipage}[H]{1.0\linewidth}
 		\begin{center} 
-  			\includegraphics[angle=90,totalheight=\textheight,
-			width=\textwidth
-			]{bilder/studienplan_bsc_ws/studienplan_bsc.pdf}
-  			\label{studienplan_neu}
+  			\includegraphics[angle=90, height=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/ws2015/BScInformatikWS1516-fginfo-tech_scissored}
+  			\label{studienplan_tech}
+		\end{center}
+		\end{minipage}
+		\newpage
+		\begin{minipage}[H]{1.0\linewidth}
+		\begin{center} 
+  			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/ws2015/BScInformatikWS1516-fginfo-theo_scissored}
+  			\label{studienplan_theo}
 		\end{center}
 		\end{minipage}
 	\include{texte/master/index} %
-	\include{texte/computer/index} %
-	\newpage
-	\section{Gruppen und Unipolitik}
+	\include{texte/computer/index}
+	\section{Hochschulpolitik}
 		\label{politik}
+		\begin{minipage}[H]{1.0\linewidth}
+		\begin{center}
+			\centering
+			\includegraphics[angle=90 , totalheight=700pt, width=\textwidth]{bilder/gremienkunde3}
+		\end{center}
+		\end{minipage}
 		\begin{multicols}{2}
 		\input{texte/politik/fachgruppe} %
 		\input{texte/politik/gremien} %
@@ -93,11 +108,10 @@
 		\begin{multicols}{2}
 		%\input{texte/nuetzliches/studgruppen}
 		\input{texte/nuetzliches/ansprechpartner} %
-		\end{multicols}
-		\input{texte/nuetzliches/lernraeume} %
-		\begin{multicols}{2}
 		\input{texte/nuetzliches/campus}
 		\end{multicols}
+		\newpage
+		\input{texte/nuetzliches/lernraeume} %
 		\newpage
 		\input{texte/impressum}
 \end{document}
