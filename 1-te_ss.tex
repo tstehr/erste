@@ -1,15 +1,16 @@
-%Hauptdokument der Erstsemesterzeitschrift "Erste"-Sommersemester der Fachgruppe Informatik
+%Hauptdokument der Erstsemesterzeitschrift "Erste" der Fachgruppe Informatik
+ 
 \documentclass[]{papertex}
 	\usepackage[utf8]{inputenc}
 	\usepackage{graphicx}
 	\usepackage{amssymb}
 	\usepackage[T1]{fontenc}
 	\usepackage{multicol}
+	\usepackage{comment}
 	\usepackage[ngerman]{babel}
 	\usepackage{wrapfig}
 	\usepackage[babel,german=quotes]{csquotes}
-	
-	\usepackage{comment}
+
 	\renewcommand{\familydefault}{\sfdefault}
 
 	%\clubpenalty = 10000
@@ -59,7 +60,7 @@
 		\input{texte/bachelor/profs_ss}
 		\input{texte/bachelor/studienplan_ss}
 		\input{texte/bachelor/quovadis_ss}
-	\input{texte/master/index}
+	\include{texte/master/index} %
 	\include{texte/computer/index}
 	\newpage
 	\section{Hochschulpolitik}
@@ -82,5 +83,5 @@
 		\newpage
 		\input{texte/nuetzliches/lernraeume}
 		\newpage
-		\include{texte/impressum}
+		\input{texte/impressum}
 \end{document}
