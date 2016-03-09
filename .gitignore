@@ -15,6 +15,7 @@
 *.brf
 *.backup
 *.synctex.gz
+desktop.ini
 1-te.pdf
 mini.pdf
 1-te.dvi
