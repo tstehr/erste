@@ -28,24 +28,22 @@
 		\input{texte/studienplan/grobplan}  % Grobplanung
 		\input{texte/studienplan/wegweiser}
 		\end{multicols}
+
+		\vfill
+		\begin{center}
+			\includegraphics[width=\textwidth]{bilder/XKCD/travelling_salesman}
+		\end{center}
+		\vfill
 	\newpage
 
 	\section{Spezielles im Bachelor}
 		\label{bachelor}
 		\begin{multicols}{2}
 		\input{texte/bachelor/profs_ws} %je nach Semester profs_ss / profs_ws %
+		\input{texte/bachelor/studienplan_ws}
+		\input{texte/bachelor/quovadis_ws}
 		\end{multicols}
-		\newpage
-		\input{texte/bachelor/interview} %
-		\newpage
-		\begin{multicols}{2}
-		\input{texte/bachelor/studienplan_ws} %
-		\input{texte/bachelor/quovadis_ws} %
-		\end{multicols}
-		%\vspace{4cm}
-		\begin{center}
-		\includegraphics[totalheight=6cm]{bilder/XKCD/travelling_salesman}
-		\end{center}
+
 		\begin{minipage}[H]{1.0\linewidth}
 			\begin{center}     
 			\label{musterstudienplan}
@@ -53,6 +51,7 @@
 			\end{center}  
 		\end{minipage}
 		\newpage
+
 		\begin{minipage}[H]{1.0\linewidth}
 		\begin{center} 
   			\includegraphics[angle=90, height=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/ws2015/BScInformatikWS1516-fginfo-tech_scissored}
@@ -60,12 +59,14 @@
 		\end{center}
 		\end{minipage}
 		\newpage
+
 		\begin{minipage}[H]{1.0\linewidth}
 		\begin{center} 
   			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ws/ws2015/BScInformatikWS1516-fginfo-theo_scissored}
   			\label{studienplan_theo}
 		\end{center}
 		\end{minipage}
+
 	\include{texte/master/index}
 	\include{texte/computer/index}
 	\newpage

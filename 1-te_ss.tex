@@ -28,20 +28,31 @@
 		\input{texte/studienplan/grobplan}  % Grobplanung
 		\input{texte/studienplan/wegweiser}
 		\end{multicols}
+
 		\vfill
 		\begin{center}
-		\includegraphics[%totalheight=6cm
-		width=\textwidth]{bilder/XKCD/travelling_salesman}
-	      \end{center}
-	      \vfill
+			\includegraphics[width=\textwidth]{bilder/XKCD/travelling_salesman}
+		\end{center}
+		\vfill
 	\newpage
 
 	\section{Spezielles im Bachelor}
 		\label{bachelor}
-		\input{texte/bachelor/profs_ss}
+		\begin{multicols}{2}
+		\input{texte/bachelor/profs_ss} %je nach Semester profs_ss / profs_ws %
 		\input{texte/bachelor/studienplan_ss}
 		\input{texte/bachelor/quovadis_ss}
-	\include{texte/master/index} %
+		\end{multicols}
+
+		\begin{minipage}[H]{1.0\linewidth}
+			\begin{center}     
+			\label{musterstudienplan}
+			\includegraphics[angle=90, totalheight=\textheight, width=\textwidth ]{bilder/studienplan_bsc_ss/FG_Vorschlag_BeginSS_2015}
+			\end{center}  
+		\end{minipage}
+		\newpage
+
+	\include{texte/master/index}
 	\include{texte/computer/index}
 	\newpage
 
@@ -60,7 +71,7 @@
 	\newpage
 
 	\section{Sonstiges}
-		\label{sonstiges} 
+		\label{sonstiges}
 		\begin{center}
 		\includegraphics[totalheight=3cm]{bilder/XKCD/random_number}
 		\end{center}
