@@ -11,30 +11,19 @@ LATEXVIEW = xdvi
 PDFVIEW = xpdf
 #open "/Volumes/Mac OS X/Applications/Preview.app" 
 
-all: ws ss
+all: 1te
 
-ws: 1-te_ws.pdf
-	pdflatex 1-te_ws.tex
+1te: 1-te.pdf
+	pdflatex 1-te.tex
 
-1-te_ws.pdf: 1-te_ws.tex
-	pdflatex 1-te_ws.tex
+1-te.pdf: 1-te.tex
+	pdflatex 1-te.tex
 	#bibtex 1-te_ws.aux
-	pdflatex 1-te_ws.tex
+	pdflatex 1-te.tex
 #	$(PDFVIEW) ${MAINFILE}.pdf
 
-ss: 1-te_ss.pdf
-	pdflatex 1-te_ss.tex
-	#bibtex 1-te_ss.aux
-	pdflatex 1-te_ss.tex
-
-1-te_ss.pdf: 1-te_ss.tex
-	pdflatex 1-te_ss.tex
-
-cleanss: distclean
-	rm -f 1-te_ss.{dvi,ps,pdf}	
-
-cleanws: distclean
-	rm -f 1-te_ws.{dvi,ps,pdf}	
+clean: distclean
+	rm -f 1-te.{dvi,ps,pdf}	
 
 distclean:
 	rm -f *.{aux,log,toc,out}
