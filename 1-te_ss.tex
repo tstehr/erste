@@ -3,6 +3,9 @@
 
 \input{header/packages}
 \input{header/config}
+\input{header/macros}
+
+\settoggle{winter}{false}
 
 \begin{document}
 	\thispagestyle{empty}
@@ -14,7 +17,7 @@
 	\newpage
 
 	\section{Die ersten Tage}
-		\input{texte/erstetage/ersticheckliste_ss}
+		\input{texte/erstetage/ersticheckliste\termPostfix}
 		\input{texte/erstetage/owoche}
 	\newpage
 
@@ -39,11 +42,11 @@
 	\section{Spezielles im Bachelor}
 		\label{bachelor}
 		\begin{multicols}{2}
-		\input{texte/bachelor/profs_ss} %je nach Semester profs_ss / profs_ws %
-		\input{texte/bachelor/studienplan_ss}
-		\input{texte/bachelor/quovadis_ss}
+		\input{texte/bachelor/profs\termPostfix}
+		\input{texte/bachelor/studienplan\termPostfix}
+		\input{texte/bachelor/quovadis\termPostfix}
 		\end{multicols}
-		\input{texte/bachelor/musterstudienplan_ss}
+		\input{texte/bachelor/musterstudienplan_\termPostfix}
 
 	\include{texte/master/index}
 	\include{texte/computer/index}
