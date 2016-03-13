@@ -1,1 +1,15 @@
+% Toggles between winter term and summer term 
 \newtoggle{winter}
+
+% This system is meant to make updating the Erste for the new semster simple. Every semster gets a new version number that is larger than the previous one (assigned in 1-te.tex). 
+% By using \tocheck, defined below, todos can be left in the source and disabled one by one by incresing the version number of the tocheck. Once all todos are adressed, the new version can be released. Later all todos can be enabled again by incrementing the version number.
+\newcounter{version}
+
+% Defines a conditional todo. 2 mandatory arguments:
+% 1st param, Valid to version: This todo has been adressd as of the given version
+% 2nd param, Todo description: What needs to be done to adress this todo
+\newrobustcmd{\tocheck}[2]{
+	\ifnumless{#1}{\value{version}}{
+		\todo[inline]{#2}
+	}{}
+}
