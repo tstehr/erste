@@ -7,13 +7,16 @@
 \begin{document}
 	\thispagestyle{empty}
 	\clearpage
+
 	\setcounter{page}{1}
 	\tableofcontents
 	\include{texte/vorwort}
 	\newpage
+
 	\section{Die ersten Tage}
 		\input{texte/erstetage/ersticheckliste_ss}
 	\newpage
+
 	\section{Studienplan(ung) für jeden}
 		\label{studienplan}
 		\begin{multicols}{2}
@@ -31,6 +34,7 @@
 	      \end{center}
 	      \vfill
 	\newpage
+
 	\section{Spezielles im Bachelor}
 		\label{bachelor}
 		\input{texte/bachelor/profs_ss}
@@ -39,13 +43,21 @@
 	\include{texte/master/index} %
 	\include{texte/computer/index}
 	\newpage
+
 	\section{Hochschulpolitik}
 		\label{politik}
+		\begin{minipage}[H]{1.0\linewidth}
+		\begin{center}
+			\centering
+			\includegraphics[angle=90 , totalheight=700pt, width=\textwidth]{bilder/gremienkunde3}
+		\end{center}
+		\end{minipage}
 		\begin{multicols}{2}
 		\input{texte/politik/fachgruppe}
 		\input{texte/politik/gremien}
 		\end{multicols}
 	\newpage
+
 	\section{Sonstiges}
 		\label{sonstiges}
 		\begin{center}
