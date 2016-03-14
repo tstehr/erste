@@ -19,7 +19,7 @@ all: 1te
 
 1-te.pdf: 1-te.tex
 	$(LATEX) 1-te.tex
-	#bibtex 1-te_ws.aux
+	$(LATEX) 1-te.tex
 	$(LATEX) 1-te.tex
 #	$(PDFVIEW) ${MAINFILE}.pdf
 

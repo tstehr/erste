@@ -18,5 +18,6 @@
 % 1st param, Valid to version: This url is still valid as of version
 % 2nd param, URL: The url
 \newrobustcmd{\verUrl}[2]{\ifnumless{#1}{\value{version}}{\todo[inline]{Check \url{#2}}}{}\url{#2}}
+\newrobustcmd{\verHref}[4][]{\ifnumless{#2}{\value{version}}{\todo[inline]{Check \url{#3}}}{}\href[#1]{#3}{\nolinkurl{#4}}}
 
-\newrobustcmd{\fginfoUrl}[0]{\verUrl{0}{http://fginfo.cs.tu-bs.de/}}
+\newrobustcmd{\fginfoUrl}[0]{\verUrl{1}{http://fginfo.cs.tu-bs.de/}}
