@@ -9,17 +9,18 @@
 
 LATEXVIEW = xdvi
 PDFVIEW = xpdf
+LATEX = pdflatex --synctex=1
 #open "/Volumes/Mac OS X/Applications/Preview.app" 
 
 all: 1te
 
 1te: 1-te.pdf
-	pdflatex 1-te.tex
+	$(LATEX) 1-te.tex
 
 1-te.pdf: 1-te.tex
-	pdflatex 1-te.tex
+	$(LATEX) 1-te.tex
 	#bibtex 1-te_ws.aux
-	pdflatex 1-te.tex
+	$(LATEX) 1-te.tex
 #	$(PDFVIEW) ${MAINFILE}.pdf
 
 clean: distclean
