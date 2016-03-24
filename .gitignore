@@ -15,9 +15,17 @@
 *.brf
 *.backup
 *.synctex.gz
+desktop.ini
 1-te.pdf
 mini.pdf
 1-te.dvi
 1-te_A4.pdf
 erste.zip
 htmlout
+1-te_ss.pdf
+1-te_ws.pdf
+1-te.tdo
+1-te.synctex.gz(busy)
+1-te_booklet_coverless.pdf
+1-te_booklet.pdf
+1-te_online.pdf
