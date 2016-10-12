@@ -21,7 +21,7 @@ release: clean 1-te.pdf 1-te_online.pdf 1-te_booklet.pdf
 
 1-te_booklet.pdf: 1-te.pdf
 	pdfbook --outfile 1-te_booklet_coverless.pdf 1-te.pdf
-	pdfjam --outfile 1-te_booklet.pdf bilder/Erste_Cover/cover.pdf 1-te_booklet_coverless.pdf
+	pdfjam --landscape --outfile 1-te_booklet.pdf bilder/Erste_Cover/cover.pdf bilder/Empty.pdf 1-te_booklet_coverless.pdf
 
 1-te.pdf: 1-te.tex
 	$(LATEX) 1-te.tex
