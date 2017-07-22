@@ -7,14 +7,15 @@
 # ganz wichtig: die Befehlszeilen muessen mit einem TAB beginnen!!!
 
 
-LATEXVIEW = xdvi
-PDFVIEW = xpdf
 LATEX = pdflatex --synctex=1
-#open "/Volumes/Mac OS X/Applications/Preview.app" 
 
-all: clean 1-te.pdf
+# Find all dependencies (this is overly broad but works)
+IMAGES = $(shell find bilder | sed 's/ /\\ /g')
+DEPS = $(shell find header texte -type f -name '*.tex' | sed 's/ /\\ /g')
 
-release: clean 1-te.pdf 1-te_online.pdf 1-te_booklet.pdf
+all: 1-te.pdf
+
+release: 1-te.pdf 1-te_online.pdf 1-te_booklet.pdf
 
 1-te_online.pdf: 1-te.pdf
 	pdfjam --outfile 1-te_online.pdf bilder/Erste_Cover/vorne.pdf 1-te.pdf bilder/Erste_Cover/hinten.pdf
@@ -23,13 +24,11 @@ release: clean 1-te.pdf 1-te_online.pdf 1-te_booklet.pdf
 	pdfbook --outfile 1-te_booklet_coverless.pdf 1-te.pdf
 	pdfjam --landscape --outfile 1-te_booklet.pdf bilder/Erste_Cover/cover.pdf bilder/Empty.pdf 1-te_booklet_coverless.pdf
 
-1-te.pdf: 1-te.tex
+1-te.pdf: $(DEPS)
 	$(LATEX) 1-te.tex
 	$(LATEX) 1-te.tex
 	$(LATEX) 1-te.tex
 	$(LATEX) 1-te.tex
-#	$(PDFVIEW) ${MAINFILE}.pdf
-
 
 clean: distclean
 	rm -f 1-te*.{dvi,ps,pdf}	
