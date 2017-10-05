@@ -3,14 +3,6 @@
 %	final %hide anything from todonotes	
 	]{scrartcl}
 
-%\usepackage{scrlayer-scrpage}
-%\pagestyle{scrheadings}
-%\ohead{\leftmark}
-%\ihead{\rightmark}
-%\chead{}
-%\pagestyle{scrheadings}
-%\automark[subsection]{section}
-
 \input{header/packages}
 \input{header/config}
 \input{header/layout}
@@ -49,10 +41,9 @@
 		\input{texte/studienplan/grobplan}  % Grobplanung
 		\input{texte/studienplan/wegweiser}
 		\end{multicols}
-
 		\vfill
 		\begin{center}
-			\includegraphics[width=\textwidth]{bilder/XKCD/travelling_salesman}
+		\includegraphics[totalheight=3cm]{bilder/XKCD/random_number}
 		\end{center}
 		\vfill
 	\newpage
@@ -91,13 +82,16 @@
 		\input{texte/politik/fachgruppe}
 		\input{texte/politik/gremien}
 		\end{multicols}
+
+		\vfill
+		\begin{center}
+			\includegraphics[width=\textwidth]{bilder/XKCD/travelling_salesman}
+		\end{center}
+		\vfill
 	\newpage
 
 	\section{Sonstiges}
 		\label{sonstiges}
-		\begin{center}
-		\includegraphics[totalheight=3cm]{bilder/XKCD/random_number}
-		\end{center}
 		\begin{multicols}{2}
 		%\input{texte/nuetzliches/studgruppen}
 		\input{texte/nuetzliches/ansprechpartner}
@@ -107,4 +101,10 @@
 		\input{texte/nuetzliches/lernraeume}
 		\newpage
 		\input{texte/impressum}
+
+		\vfill
+		\begin{center}
+			\includegraphics[totalheight=10cm]{bilder/XKCD/tabletop_roleplaying}
+		\end{center}
+		\vfill
 \end{document}
