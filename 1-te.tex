@@ -1,17 +1,26 @@
 %Hauptdokument der Erstsemesterzeitschrift "Erste" der Fachgruppe Informatik
 \documentclass[
-%final %hide anything from todonotes
-]{papertex}
+%	final %hide anything from todonotes	
+	]{scrartcl}
+
+%\usepackage{scrlayer-scrpage}
+%\pagestyle{scrheadings}
+%\ohead{\leftmark}
+%\ihead{\rightmark}
+%\chead{}
+%\pagestyle{scrheadings}
+%\automark[subsection]{section}
 
 \input{header/packages}
 \input{header/config}
+\input{header/layout}
 \input{header/macros}
 
 \settoggle{winter}{true}
 \setcounter{version}{4}
 
 \begin{document}
-	\thispagestyle{empty}
+	%\thispagestyle{empty}
 	\clearpage
 
 	\listoftodos
@@ -19,6 +28,9 @@
 
 	\setcounter{page}{1}
 	\tableofcontents
+	\todo[inline]{Positionen der Bilder anpassen}
+	\todo[inline]{Seminar-Beschreibung verkehrt}
+	\todo[inline]{Musterstudienplan Master größer}
 	\include{texte/vorwort}
 	\newpage
 
