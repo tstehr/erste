@@ -1,7 +1,19 @@
 %Hauptdokument der Erstsemesterzeitschrift "Erste" der Fachgruppe Informatik
+%\documentclass[
+%	final,%hide anything from todonotes	
+%%	]{scrartcl}
+%	nexus,
+%	twoside
+%	]{tubsartcl}
+
 \documentclass[
-	final %hide anything from todonotes	
-	]{scrartcl}
+  final,
+  a4paper,              % DIN A4
+  style=print,
+  nexus,                % corporate design font
+  lnum,                 % use "Versalziffern" instead of "Mediaevalziffern"
+]{tubsartcl}
+
 
 \input{header/packages}
 \input{header/config}
@@ -23,6 +35,7 @@
 	\todo[inline]{Positionen der Bilder anpassen}
 	\todo[inline]{Seminar-Beschreibung verkehrt}
 	\todo[inline]{Musterstudienplan Master größer}
+	\todo[inline]{$bilder/XKCD/devotion_to_duty$ wird grade nicht verwendet}
 	\include{texte/vorwort}
 	\newpage
 
@@ -71,6 +84,12 @@
 	\section{Computer und so\ldots}
 		\label{computer}
 		\input{texte/computer/index}
+		\vfill
+		\begin{center}
+				%\includegraphics[totalheight=6cm]{bilder/XKCD/devotion_to_duty}
+				\includegraphics[width=0.9\textwidth]{bilder/XKCD/tech_support_cheat_sheet}
+		\end{center}
+		\vfill
 	\newpage
 
 	\section{Hochschulpolitik}
@@ -82,8 +101,8 @@
 		\end{center}
 		\end{minipage}
 		\vspace{0.5cm}
-		
 		\begin{multicols}{2}
+		\raggedcolumns
 		\input{texte/politik/fachgruppe}
 		\input{texte/politik/gremien}
 		\end{multicols}
