@@ -21,9 +21,10 @@ release: 1-te.pdf 1-te_online.pdf 1-te_booklet.pdf
 1-te_online.pdf: 1-te.pdf
 	pdfjam --outfile 1-te_online.pdf bilder/Erste_Cover/vorne.pdf 1-te.pdf bilder/Erste_Cover/hinten.pdf
 
-1-te_booklet.pdf: 1-te.pdf cover_rotated.pdf
-	pdfbook --outfile 1-te_booklet_coverless.pdf 1-te.pdf
-	pdfjam --landscape --outfile 1-te_booklet.pdf cover_rotated.pdf bilder/Empty.pdf 1-te_booklet_coverless.pdf
+1-te_booklet.pdf: 1-te.pdf build/cover_rotated.pdf build
+	pdfjam --outfile build/1-te_pad.pdf 1-te.pdf '{},-,{}'
+	pdfbook --outfile build/1-te_booklet_emptycover.pdf build/1-te_pad.pdf
+	pdfjam --landscape --outfile 1-te_booklet.pdf build/cover_rotated.pdf '-' build/1-te_booklet_emptycover.pdf '2-last'
 
 1-te.pdf: $(IMAGES) $(DEPS) $(GENERATED_LATEX) 
 	$(LATEX) 1-te.tex
@@ -31,8 +32,11 @@ release: 1-te.pdf 1-te_online.pdf 1-te_booklet.pdf
 	$(LATEX) 1-te.tex
 	$(LATEX) 1-te.tex
 
-cover_rotated.pdf: bilder/Erste_Cover/cover.pdf
-	pdf180 --outfile cover_rotated.pdf bilder/Erste_Cover/cover.pdf
+build/cover_rotated.pdf: build bilder/Erste_Cover/cover.pdf
+	pdf180 --outfile $@ bilder/Erste_Cover/cover.pdf
+
+build:
+	mkdir build
 
 %.tex: %.dokuwiki
 	scripts/dokuwiki_table_to_tex.sh $^ $@
@@ -41,6 +45,7 @@ clean: distclean
 	rm -f 1-te.{dvi,ps,pdf}
 
 distclean:
+	rm -rf build
 	rm -f *.{aux,log,toc,out,tdo,synctex.gz}
 	rm -f *~
 	rm -f $(GENERATED_LATEX)
