@@ -28,32 +28,33 @@
 	\thispagestyle{empty}
 
 	\listoftodos
-
-	\vfill
-	\begin{center}
-			%\includegraphics[totalheight=6cm]{bilder/XKCD/devotion_to_duty}
-			\includegraphics[width=0.9\textwidth]{bilder/XKCD/tech_support_cheat_sheet}
-	\end{center}
-	\vfill
-
-	\clearpage
-
-	\setcounter{page}{1}
-	\tableofcontents
 	\todo[inline]{Positionen der Bilder anpassen}
 	\todo[inline]{Seminar-Beschreibung verkehrt}
 	\todo[inline]{Musterstudienplan Master größer}
-	\todo[inline]{$bilder/XKCD/devotion_to_duty$ und $bilder/XKCD/travelling_salesman$ werden grade nicht verwendet}
-	\include{texte/vorwort}
+	\todo[inline]{xkcds \texttt{devotion_to_duty} und \texttt{travelling_salesman} werden grade nicht verwendet}
+
+	\xkcd{width=0.9\textwidth}{tech_support_cheat_sheet}
+
+	\newpage
+
+	\setcounter{page}{1}
+	\tableofcontents
+
+	\newpage
+
+	\input{texte/vorwort}
+
+	\vfill
+	\xkcd{totalheight=12cm}{dorm_poster}
+
 	\newpage
 
 	\section{Die ersten Tage}
 		\input{texte/erstetage/ersticheckliste}
 		\input{texte/erstetage/owoche}
+
 		\vfill
-		\begin{center}
-		\includegraphics[totalheight=6cm]{bilder/XKCD/computers_vs_humans}
-		\end{center}
+		\xkcd{totalheight=6cm}{computers_vs_humans}
 		\vfill
 	\newpage
 
@@ -67,11 +68,8 @@
 		\input{texte/studienplan/grobplan}  % Grobplanung
 		\input{texte/studienplan/wegweiser}
 		\end{multicols}
-		\vfill
-		\begin{center}
-		\includegraphics[totalheight=3cm]{bilder/XKCD/random_number}
-		\end{center}
-		\vfill
+
+		\xkcd{totalheight=3cm}{random_number}
 	\newpage
 
 	\section{Spezielles im Bachelor}
@@ -123,9 +121,5 @@
 		\newpage
 		\input{texte/impressum}
 
-		\vfill
-		\begin{center}
-			\includegraphics[totalheight=10cm]{bilder/XKCD/tabletop_roleplaying}
-		\end{center}
-		\vfill
+		\xkcd{totalheight=10cm}{tabletop_roleplaying}
 \end{document}
