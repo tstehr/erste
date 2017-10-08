@@ -28,9 +28,8 @@
 	\thispagestyle{empty}
 
 	\listoftodos
-	\todo[inline]{Positionen der Bilder anpassen}
-	\todo[inline]{xkcds \texttt{devotion\_to\_duty} und \texttt{travelling\_salesman} werden grade nicht verwendet}
-%	\xkcd{width=0.9\textwidth}{tech_support_cheat_sheet}
+	\vspace*{2.5cm}
+	\xkcd{width=0.9\textwidth}{tech_support_cheat_sheet}
 
 	\newpage
 
@@ -42,7 +41,7 @@
 	\input{texte/vorwort}
 
 	\vfill
-	\xkcd{totalheight=12cm}{dorm_poster}
+	\xkcd{width=.7\textwidth}{dorm_poster}
 
 	\newpage
 
@@ -66,7 +65,9 @@
 		\input{texte/studienplan/wegweiser}
 		\end{multicols}
 
-		\xkcd{totalheight=3cm}{random_number}
+		\vfill
+		\xkcd{width=.9\textwidth}{chat_systems}
+		\vfill
 	\newpage
 
 	\section{Spezielles im Bachelor}
@@ -75,32 +76,46 @@
 		\input{texte/bachelor/profs}
 		\input{texte/bachelor/studienplan}
 		\input{texte/bachelor/studienplanung}
+
+		% dirty hack to prevent empty page due to footnote in multicols
+		\pagebreak
+		\enlargethispage{1.2\baselineskip}
 		\end{multicols}
+
 		\input{texte/bachelor/musterstudienplan}
 	%\newpage
 
 	\section{Spezielles im Master}
 		\label{master}
 		\input{texte/master/index}
+		\vfill
+		\xkcd{width=.8\textwidth}{exploits_of_a_mom}
 	\newpage
 
 	\section{Computer und so\ldots}
 		\label{computer}
+		\begin{multicols}{2}
 		\input{texte/computer/index}
-
+		\input{texte/computer/computer}
+		\begin{figure*}[htb]
+			\xkcd{width=.9\textwidth}{cautionary}
+		\end{figure*}
+		\input{texte/computer/gitz}
+		\input{texte/computer/linux}
+		\input{texte/computer/imagine}
+		\input{texte/computer/links}
+		\end{multicols}
+		\vfill
+		\xkcd{width=.9\textwidth}{travelling_salesman}
 	\newpage
 
 	\section{Hochschulpolitik}
 		\label{politik}
-		\begin{minipage}[H]{1.0\linewidth}
 		\begin{center}
-			\centering
-			\includegraphics[width=\textwidth]{bilder/gremienkunde/gremienkunde3}
+			\includegraphics[width=.9\textwidth]{bilder/gremienkunde/gremienkunde3}
 		\end{center}
-		\end{minipage}
 		\vspace{0.5cm}
 		\begin{multicols}{2}
-		\raggedcolumns
 		\input{texte/politik/fachgruppe}
 		\input{texte/politik/gremien}
 		\end{multicols}
@@ -111,12 +126,19 @@
 		\begin{multicols}{2}
 		%\input{texte/nuetzliches/studgruppen}
 		\input{texte/nuetzliches/ansprechpartner}
+		\vspace{.5cm}
+		\xkcd{width=.9\columnwidth}{random_number}
 		\input{texte/nuetzliches/campus}
 		\end{multicols}
 		\newpage
 		\input{texte/nuetzliches/lernraeume}
 		\newpage
+
+	\pagestyle{empty}
+	\section*{Impressum}
+		\label{impressum}
 		\input{texte/impressum}
 
-		\xkcd{totalheight=10cm}{tabletop_roleplaying}
+		\vfill
+		\xkcd{width=.9\textwidth}{devotion_to_duty}
 \end{document}
