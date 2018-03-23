@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3005"
+   version="1.1"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   width="1831.615"
+   height="500"
+   sodipodi:docname="fg-logo.svg">
+  <metadata
+     id="metadata3011">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3009">
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3898"
+       is_visible="true"
+       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 Z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3894"
+       is_visible="true"
+       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 Z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1397"
+     inkscape:window-height="855"
+     id="namedview3007"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.55932146"
+     inkscape:cx="1142.7091"
+     inkscape:cy="464.93064"
+     inkscape:window-x="43"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3">
+    <sodipodi:guide
+       position="25,25"
+       orientation="0,1"
+       id="guide821"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="25,25"
+       orientation="1,0"
+       id="guide823"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="25,475"
+       orientation="0,1"
+       id="guide825"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="1806.615,25"
+       orientation="1,0"
+       id="guide827"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 1"
+     style="display:inline"
+     transform="translate(0,71)">
+    <g
+       id="g851"
+       transform="matrix(1.0189243,0,0,1.0189243,31.117799,-33.772923)">
+      <g
+         transform="matrix(1.0294691,0,0,1.0294691,-3.9452359,-14.058938)"
+         style="display:inline;opacity:1;fill:#800000"
+         id="g841">
+        <path
+           style="display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12.24160862;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 211.38117,2 C 93.53457,1.9995328 -1.9993977,97.532623 -2,215.37923 c 0.086444,86.02079 51.816345,163.5777 131.20187,196.70656 l 21.68067,-46.79074 C 92.7126,341.83963 53.623828,287.03388 49.901793,224.99282 H 232.68857 V 174.05143 H 55.067282 C 73.48824,105.44113 136.4858,53.607434 211.38117,53.608233 c 36.97032,0.04849 72.80868,12.758713 101.54841,36.01456 L 347.46857,51.263641 C 309.23037,19.490073 261.09752,2.0659802 211.38117,2 Z"
+           id="path51"
+           inkscape:connector-curvature="0" />
+        <path
+           style="display:inline;opacity:1;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:23.25427246;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 210.25747,51.599972 c -27.44199,0.212844 -65.64018,10.098034 -98.02376,35.868752 l 29.71954,41.279196 c 23.4727,-18.43055 51.00659,-25.53366 70.83739,-25.68747 78.26131,-0.60701 142.16662,60.012 142.16662,136.53844 0,74.65613 -60.81956,136.82157 -136.45678,139.8162 v -30.71882 h 34.79367 v -52.38003 c -28.48115,0 -56.96231,0 -85.44345,0 v 52.38003 52.38005 h 0.031 v 26.01213 c 12.74843,2.5407 26.82666,3.91155 42.37572,3.91155 107.39812,0 195.09102,-87.01873 195.09102,-192.03294 0,-105.01421 -87.69613,-188.200064 -195.09102,-187.367088 z"
+           id="ellipse53"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccsscccccccccsscc" />
+      </g>
+      <text
+         id="text904"
+         y="173.13075"
+         x="454.9353"
+         style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:211.23628235px;line-height:0.99999998%;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Thin';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.28090668px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:91.00000262%;font-family:NexusSansPro;-inkscape-font-specification:'NexusSansPro Bold';letter-spacing:3.08840728px;fill:#000000;stroke-width:5.28090668px"
+           y="173.13075"
+           x="454.9353"
+           id="tspan902"
+           sodipodi:role="line">FACHGRUPPE</tspan><tspan
+           id="tspan906"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:91.00000262%;font-family:NexusSansPro;-inkscape-font-specification:'NexusSansPro Bold';letter-spacing:3.08840728px;fill:#000000;stroke-width:5.28090668px"
+           y="365.35577"
+           x="454.9353"
+           sodipodi:role="line">INFORMATIK</tspan></text>
+    </g>
+  </g>
+</svg>
