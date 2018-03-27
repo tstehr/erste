@@ -7,7 +7,7 @@
 %	]{tubsartcl}
 
 \documentclass[
-  %final,
+  final,
   a4paper,              % DIN A4
   style=screen,
   twoside,
@@ -83,9 +83,12 @@
 		\input{texte/bachelor/studienplanung}
 
 		% dirty hack to prevent empty page due to footnote in multicols
-		\pagebreak
-		\enlargethispage{1.2\baselineskip}
+		%\pagebreak
+		%\enlargethispage{1.2\baselineskip}
 		\end{multicols}
+
+		\vfill
+		\xkcd{width=.9\textwidth}{travelling_salesman}
 
 		\input{texte/bachelor/musterstudienplan}
 	%\newpage
@@ -94,7 +97,7 @@
 		\label{master}
 		\input{texte/master/index}
 		\vfill
-		\xkcd{width=.8\textwidth}{exploits_of_a_mom}
+		\xkcd{width=.9\textwidth}{exploits_of_a_mom}
 	\newpage
 
 	\section{Computer und so\ldots}
@@ -103,15 +106,13 @@
 		\input{texte/computer/index}
 		\input{texte/computer/computer}
 		\begin{figure*}[htb]
-			\xkcd{width=.75\textwidth}{cautionary}
+			\xkcd{width=1\textwidth}{cautionary}
 		\end{figure*}
 		\input{texte/computer/gitz}
 		\input{texte/computer/linux}
 		\input{texte/computer/imagine}
 		\input{texte/computer/links}
 		\end{multicols}
-		\vfill
-		\xkcd{width=.65\textwidth}{travelling_salesman}
 	\newpage
 
 	\section{Hochschulpolitik}
@@ -142,8 +143,8 @@
 
 	\pagestyle{empty}
 
-		\tocheck{4}{Do this last! Add empty pages so that total page count is a multiple of 4}
-		%\blankpage
+		\tocheck{5}{Do this last! Add empty pages so that total page count is a multiple of 4}
+		\blankpage
 		%\blankpage
 		%\blankpage
 
