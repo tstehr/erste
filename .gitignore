@@ -15,9 +15,11 @@
 *.brf
 *.backup
 *.synctex.gz
+*.synctex.gz(busy)
 *.tdo
 desktop.ini
 1-te.pdf
+infofoo.pdf
 mini.pdf
 1-te.dvi
 1-te_A4.pdf
@@ -25,7 +27,6 @@ erste.zip
 htmlout
 1-te_ss.pdf
 1-te_ws.pdf
-1-te.synctex.gz(busy)
 1-te_booklet.pdf
 1-te_online.pdf
 build
