@@ -15,6 +15,7 @@
 *.brf
 *.backup
 *.synctex.gz
+*.synctex(busy)
 *.synctex.gz(busy)
 *.tdo
 desktop.ini

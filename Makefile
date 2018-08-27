@@ -8,12 +8,16 @@ GENERATED_LATEX = texte/nuetzliches/lernraeume_iz.tex texte/nuetzliches/lernraeu
 
 default: infofoo.pdf 1-te.pdf
 
-release: 1-te.pdf 1-te_booklet.pdf  1-te.pdf
+release: 1-te.pdf 1-te_booklet.pdf infofoo-release
 
 1-te_booklet.pdf: 1-te-release
 	pdfbook --outfile 1-te_booklet.pdf 1-te.pdf
 
 # runs latex multiple times, to be sure all indexes are up to date
+infofoo-release: infofoo.pdf
+	$(LATEX) infofoo.tex	
+	$(LATEX) infofoo.tex
+
 1-te-release: 1-te.pdf
 	$(LATEX) 1-te.tex
 	$(LATEX) 1-te.tex
