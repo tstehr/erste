@@ -15,18 +15,20 @@ HEADER = $(shell find header -type f -name '*.tex' | sed 's/ /\\ /g')
 TEXTE = $(shell find texte -type f -name '*.tex' | sed 's/ /\\ /g')
 GENERATED_LATEX = texte/nuetzliches/lernraeume_iz.tex texte/nuetzliches/lernraeume_andere.tex
 
-default: 1-te.pdf
-# default: infofoo.pdf
+# default: 1-te.pdf
+default: infofoo.pdf
 
 all: release infofoo.pdf
 
 release: 1-te.pdf 1-te_booklet.pdf
-	$(LATEX) 1-te.tex
-	$(LATEX) 1-te.tex
-	$(LATEX) 1-te.tex
 
-1-te_booklet.pdf: 1-te.pdf
+1-te_booklet.pdf: 1-te-release
 	pdfbook --outfile 1-te_booklet.pdf 1-te.pdf
+
+1-te-release: 1-te.pdf
+	$(LATEX) 1-te.tex
+	$(LATEX) 1-te.tex
+	$(LATEX) 1-te.tex
 
 1-te.pdf: $(IMAGES) $(HEADER) $(TEXTE) $(GENERATED_LATEX) 1-te.tex
 	$(LATEX) 1-te.tex

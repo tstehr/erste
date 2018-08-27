@@ -1,27 +1,16 @@
 %Hauptdokument der Erstsemesterzeitschrift "Erste" der Fachgruppe Informatik
-%\documentclass[
-%	final,%hide anything from todonotes	
-%%	]{scrartcl}
-%	nexus,
-%	twoside
-%	]{tubsartcl}
-
 \documentclass[
-  final,
+  %final,
   a4paper,              % DIN A4
   style=screen,
   twoside,
   nexus,                % corporate design font
 ]{tubsartcl}
 
-
 \input{header/packages}
-\input{header/config}
 \input{header/layout}
 \input{header/macros}
-
-\settoggle{winter}{true}
-\setcounter{version}{6}
+\input{header/config}
 
 \begin{document}
 	\thispagestyle{empty}
@@ -147,10 +136,6 @@
 		\tocheck{5}{Do this last! Add empty pages so that total page count is a multiple of 4}
 		\blankpage
 		\blankpage
-		\blankpage
-
-		\includepdf[pages={1}]{bilder/Quicklinks/quicklinks.pdf}
-		\newpage
 
 		\begin{center}
 			\includegraphics[width=\textwidth]{bilder/fg-logo/fg-logo.pdf}
@@ -162,6 +147,9 @@
 
 		\vfill
 		\xkcd{width=.9\textwidth}{devotion_to_duty}
+
+		\includepdf[pages={1}]{bilder/Quicklinks/quicklinks.pdf}
+		\newpage
 
 	\clearpage
 
