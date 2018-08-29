@@ -1,0 +1,17 @@
+\documentclass[border=0pt]{standalone}
+
+\input{header/packages}
+\input{header/macros}
+\input{header/config}
+\usepackage{nexus}
+
+% supress footnotes
+\renewcommand{\footnote}[2][1]{  }
+\newcommand{\footref}[1]{  }
+
+\pagestyle{empty}
+\input{texte/stundenplan/style_bunt}
+
+\begin{document}
+\input{texte/stundenplan/woche\woche.tex}
+\end{document}
