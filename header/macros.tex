@@ -42,58 +42,56 @@
 
 
 % creates a stundenplan
-\newenvironment{stundenplan}[6]{
-	\newcommand{\wTag}{#1/6}
-	\newcommand{\hPlan}{#2}
-	\newcommand{\hAbendHeader}{.5}
-	\newcommand{\hAbend}{1.6}
-	\newcommand{\tStart}{zeit(#3,#4)}
-	\newcommand{\tEnde}{zeit(#5,#6)}
+\newenvironment{stundenplan}[6]{%
+	\newcommand{\wTag}{#1/6}%
+	\newcommand{\hPlan}{#2}%
+	\newcommand{\hAbendHeader}{.5}%
+	\newcommand{\hAbend}{1.6}%
+	\newcommand{\tStart}{zeit(#3,#4)}%
+	\newcommand{\tEnde}{zeit(#5,#6)}%
 
-	\pgfmathdeclarefunction{zeit}{2}{\pgfmathparse{##1 + ##2 / 60}}
-	\pgfmathdeclarefunction{tmpYZeit}{1}{\pgfmathparse{-\hPlan * (##1-\tStart) / (\tEnde-\tStart)}}
-	\pgfmathdeclarefunction{yZeit}{1}{\pgfmathparse{
-		max(min(tmpYZeit(##1), tmpYZeit(\tStart)), tmpYZeit(\tEnde)-\hAbendHeader-\hAbend)
-	}}
+	\pgfmathdeclarefunction{zeit}{2}{\pgfmathparse{##1 + ##2 / 60}}%
+	\pgfmathdeclarefunction{tmpYZeit}{1}{\pgfmathparse{-\hPlan * (##1-\tStart) / (\tEnde-\tStart)}}%
+	\pgfmathdeclarefunction{yZeit}{1}{\pgfmathparse{%
+		max(min(tmpYZeit(##1), tmpYZeit(\tStart)), tmpYZeit(\tEnde)-\hAbendHeader-\hAbend)%
+	}}%
 
+%
+	\tikzset{%
+	  termin/.style={%
+	   anchor=north west,%
+	   align=left,%
+	   %execute at begin node=\setlength{\baselineskip}{1.2em}%
+	  }%
+	}%
 
-	\tikzset{
-	  termin/.style={
-	   anchor=north west,
-	   align=left,
-	   %execute at begin node=\setlength{\baselineskip}{1.2em}
-	  }
-	}
+	\newcommand{\tNode}[2]{%
+		\node [termin] at (TERMIN) {%
+			\begin{varwidth}{1cm*\wTag - .2cm}%
+			##1\\%
+			\scriptsize ##2%
+			\end{varwidth}%
+		};%
+	}%
 
-	\newcommand{\tNode}[2]{
-		\node [termin] at (TERMIN) {
-			\begin{varwidth}{1cm*\wTag - .2cm}
-			##1\\
-			\scriptsize ##2
-			\end{varwidth}
-		};
-	}
+%
+	\newcommand{\Termin}[8]{%
+		%1: Beschreibung, 2: Ort, 3: Tag, 4: Start Stunde, 5: Start Minute, 6: Ende Stunde, 7: Ende Minute, 8: Farbe %
+		\draw [##8](\wTag * ##3,{yZeit(zeit(##4,##5))}) coordinate (TERMIN) rectangle (##3  * \wTag + \wTag,{yZeit(zeit(##6,##7))});%
+		\tNode{##1}{##2}%
+	}%
 
+	\newcommand{\termin}[8]{%
+		%1: Beschreibung, 2: Ort, 3: Tag, 4: Start Stunde, 5: Start Minute, 6: Ende Stunde, 7: Ende Minute, 8: Farbe (Fügt Zeit automatisch in Beschreibung ein)%
+		\Termin{##1}{##4:##5 -- ##6:##7\ifstrempty{##2}{}{, ##2}}{##3}{##4}{##5}{##6}{##7}{##8}%
+	}%
 
-	\newcommand{\Termin}[8]{
-		%1: Beschreibung, 2: Ort, 3: Tag, 4: Start Stunde, 5: Start Minute, 6: Ende Stunde, 7: Ende Minute, 8: Farbe 
-		\draw [##8](\wTag * ##3,{yZeit(zeit(##4,##5))}) coordinate (TERMIN) rectangle (##3  * \wTag + \wTag,{yZeit(zeit(##6,##7))});
-		\tNode{##1}{##2}
-	}
-
-	\newcommand{\termin}[8]{
-		%1: Beschreibung, 2: Ort, 3: Tag, 4: Start Stunde, 5: Start Minute, 6: Ende Stunde, 7: Ende Minute, 8: Farbe (Fügt Zeit automatisch in Beschreibung ein)
-		\Termin{##1}{##4:##5 -- ##6:##7\ifstrempty{##2}{}{, ##2}}{##3}{##4}{##5}{##6}{##7}{##8}
-	}
-
-	\newcommand{\abendtermin}[4]{
-		%1: Beschreibung, 2: Ort, 3: Tag, 4: Farbe
-		\draw [##4](\wTag * ##3,-\hPlan-\hAbendHeader) coordinate (TERMIN) rectangle (##3  * \wTag + \wTag, -\hPlan-\hAbendHeader-\hAbend);
-		\tNode{##1}{##2}
-	}
-	
-	\begin{tikzpicture}[font=\small]
-
+	\newcommand{\abendtermin}[4]{%
+		%1: Beschreibung, 2: Ort, 3: Tag, 4: Farbe%
+		\draw [##4](\wTag * ##3,-\hPlan-\hAbendHeader) coordinate (TERMIN) rectangle (##3  * \wTag + \wTag, -\hPlan-\hAbendHeader-\hAbend);%
+		\tNode{##1}{##2}%
+	}%
+	\begin{tikzpicture}[font=\small]%
 	% spalten
 	\foreach \x in {0,...,5}{
 		\draw (\x*\wTag,0) -- (\x*\wTag,-\hPlan);
@@ -112,6 +110,4 @@
 	\node [anchor=south] at (3.5* \wTag,0) {\textbf{Donnerstag}};
 	\node [anchor=south] at (4.5* \wTag,0) {\textbf{Freitag}};
 	\node [anchor=south] at (5.5* \wTag,0) {\textbf{Wochenende\vphantom{g}}};
-}{
-	\end{tikzpicture}
-}
+}{\end{tikzpicture}}
