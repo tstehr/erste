@@ -39,14 +39,5 @@ stundenplan%.png: $(HEADER) stundenplan.tex texte/stundenplan/woche%.tex
 %.tex: %.dokuwiki
 	scripts/dokuwiki_table_to_tex.sh $^ $@
 
-clean: distclean
-	rm -f 1-te.{dvi,ps,pdf}
-	rm -f infofoo.{dvi,ps,pdf}
-	rm -f stundenplan*.png
-
-distclean:
-	rm -rf build
-	rm -f *.{aux,log,toc,out,tdo,synctex.gz}
-	rm -f *~
-	rm -f $(GENERATED_LATEX)
-	rm -f stundenplan*.{dvi,ps,pdf}
+clean:
+	git clean -fdX
