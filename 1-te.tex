@@ -41,10 +41,6 @@
 	\section{Die ersten Tage}
 		\input{texte/erstetage/ersticheckliste}
 		\input{texte/erstetage/owoche}
-
-		\vfill
-		\xkcd{totalheight=6cm}{computer_problems}
-		\vfill
 	\newpage
 
 	\section{Studienplan(ung) für jeden}
@@ -67,6 +63,7 @@
 		\label{bachelor}
 		\begin{multicols}{2}
 		\input{texte/bachelor/profs}
+		\xkcd{width=.9\columnwidth}{fixing_problems}
 		\input{texte/bachelor/studienplan}
 		\input{texte/bachelor/studienplanung}
 
@@ -101,6 +98,9 @@
 		\input{texte/computer/imagine}
 		\input{texte/computer/links}
 		\end{multicols}
+
+		\vfill
+		\xkcd{width=.9\textwidth}{computer_problems}
 	\newpage
 
 	\section{Hochschulpolitik}
@@ -134,8 +134,8 @@
 
 
 		\tocheck{5}{Do this last! Add empty pages so that total page count is a multiple of 4}
-		\blankpage
-		\blankpage
+		%\blankpage
+		%\blankpage
 
 		\begin{center}
 			\includegraphics[width=\textwidth]{bilder/fg-logo/fg-logo.pdf}
