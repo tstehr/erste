@@ -1,4 +1,4 @@
-LATEX = pdflatex --synctex=1
+LATEX = pdflatex --synctex=1 -interaction=nonstopmode -halt-on-error
 
 # Find all dependencies (this is overly broad but works)
 IMAGES = $(shell find bilder | sed 's/ /\\ /g')
