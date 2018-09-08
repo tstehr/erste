@@ -6,3 +6,7 @@ before_install:
 - sudo dpkg -i texlive-tubs_1.1.0debian.deb
 script:
 - make release
+notifications:
+  email:
+    recipients:
+      - tilman@tilman.ninja
