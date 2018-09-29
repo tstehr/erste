@@ -1,6 +1,6 @@
 %Hauptdokument der Erstsemesterzeitschrift "Erste" der Fachgruppe Informatik
 \documentclass[
-  %final,
+  final,
   a4paper,              % DIN A4
   style=screen,
   twoside,
@@ -81,9 +81,8 @@
 	\section{Spezielles im Master}
 		\label{master}
 		\input{texte/master/index}
-		%Bobby Tables passt nicht mehr
-		%\xkcd{width=.9\textwidth}{exploits_of_a_mom}
 		\vfill
+		\xkcd{width=.8\textwidth}{exploits_of_a_mom}
 	\newpage
 
 	\section{Computer und so\ldots}
@@ -133,9 +132,13 @@
 	\setlength{\headheight}{0cm}
 
 
-		\tocheck{5}{Do this last! Add empty pages so that total page count is a multiple of 4}
-		%\blankpage
-		%\blankpage
+		\tocheck{6}{Do this last! Add empty pages so that total page count is a multiple of 4}
+		\blankpage
+		\blankpage
+
+
+		\includepdf[pages={1}]{bilder/Quicklinks/quicklinks.pdf}
+		\newpage
 
 		\begin{center}
 			\includegraphics[width=\textwidth]{bilder/fg-logo/fg-logo.pdf}
@@ -148,8 +151,7 @@
 		\vfill
 		\xkcd{width=.9\textwidth}{devotion_to_duty}
 
-		\includepdf[pages={1}]{bilder/Quicklinks/quicklinks.pdf}
-		\newpage
+
 
 	\clearpage
 	\enlargethispage{5em}
