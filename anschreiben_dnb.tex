@@ -1,0 +1,47 @@
+\documentclass[%
+  nexus,%       Schriftart Arial wählen
+  mono,%        Darstellung in schwarz-weiß
+  10pt%         gewählte Schriftgröße (standard)
+]{tubslttr2}
+
+
+\input{header/macros}
+\input{header/config}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[babel,german=quotes]{csquotes}
+
+\setkomavar{fromlogo}{\includegraphics[height=0.7\tubslogoHeight]{bilder/fg-logo/fg-logo.pdf}}
+
+\setkomavar{frominstitute}{Fachgruppenrat Informatik}
+
+\setkomavar{fromstreet}{c/o AStA d. TU Braunschweig, \linebreak[1] Katharinenstr. 1}
+\setkomavar{fromzipcode}{38106}
+
+\setkomavar{fromurl}{https://fginfo.cs.tu-bs.de/}
+\setkomavar{fromphonedirect}{4569}
+\setkomavar{fromemail}{fginfo@tu-b s.de}
+
+\setkomavar{signature}{Tilman Stehr\\für den Fachgruppenrat Informatik}
+
+\begin{document}
+\begin{letter}{%
+  Deutsche Nationalbibliothek\\
+  Adickesallee 1\\
+  60322 Frankfurt am Main
+}
+\setkomavar{subject}{Ablieferung Pflichtexemplar Erstsemesterzeitung}% Betreff-Variable setzen
+\opening{Sehr geehrte Damen und Herren,}
+
+anbei die Erstsemesterzeitung \enquote{Die Erste} des Fachgruppenrates Informatik der Technischen Universität Braunschweig für das \iftoggle{winter}{Wintersemester}{Sommersemester} \the\year.
+
+\closing{Mit freundlichen Grüßen}
+
+%%% optionaler Teil %%%
+%\ps
+%P.S.: Nicht vergessen!
+%\encl{Anlage\,1, Anlage\,2}
+%\cc{Institut\,1, Institut\,2}
+\end{letter}
+\end{document}

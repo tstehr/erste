@@ -8,9 +8,9 @@ STUNDENPLAN = $(shell find texte/stundenplan | sed 's/ /\\ /g')
 
 GENERATED_LATEX = texte/nuetzliches/lernraeume_iz.tex texte/nuetzliches/lernraeume_andere.tex
 
-default: infofoo.pdf 1-te.pdf stundenplan1.png stundenplan2.png
+default: infofoo.pdf 1-te.pdf stundenplan1.png stundenplan2.png  
 
-release: default 1-te_booklet.pdf infofoo-release
+release: default 1-te_booklet.pdf infofoo-release anschreiben_dnb.pdf 
 
 1-te_booklet.pdf: 1-te-release
 	pdfbook --outfile 1-te_booklet.pdf 1-te.pdf
@@ -31,6 +31,9 @@ infofoo-release: infofoo.pdf
 
 infofoo.pdf: $(HEADER) bilder/fg-logo/fg-logo.pdf $(STUNDENPLAN) infofoo.tex
 	$(LATEX) infofoo.tex
+
+anschreiben_dnb.pdf: bilder/fg-logo/fg-logo.pdf anschreiben_dnb.tex 
+	$(LATEX) anschreiben_dnb.tex
 
 stundenplan%.png: $(HEADER) stundenplan.tex texte/stundenplan/woche%.tex
 	$(LATEX) -jobname=stundenplan$* "\newcommand{\woche}{$*} \input{stundenplan.tex}"
