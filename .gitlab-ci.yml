@@ -10,7 +10,7 @@ build:
       - "*.png"
 
 release:
-  stage: release
+  stage: deploy
   only:
     - tags
   except:
