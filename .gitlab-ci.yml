@@ -1,0 +1,22 @@
+image: blang/latex
+
+build:
+  stage: build
+  script:
+    - make default
+  artifacts:
+    paths:
+      - "*.pdf"
+      - "*.png"
+      
+release:
+  stage: release
+  only:
+    - tags
+  except:
+    - branches
+  script:
+    - make release
+  artifacts:
+    - "*.pdf"
+    - "*.png"
