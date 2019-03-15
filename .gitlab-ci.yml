@@ -1,6 +1,8 @@
 image: blang/latex
 
 build:
+  tags:
+    - tubslatex
   stage: build
   script:
     - make default
@@ -10,6 +12,8 @@ build:
       - "*.png"
 
 release:
+  tags:
+    - tubslatex
   stage: deploy
   only:
     - tags
