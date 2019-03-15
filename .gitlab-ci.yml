@@ -1,4 +1,4 @@
-image: aergus/latex
+image: yschroeder/docker-texlive-tubslatex
 
 build:
   tags:
