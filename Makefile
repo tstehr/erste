@@ -39,8 +39,8 @@ stundenplan%.png: $(HEADER) stundenplan.tex texte/stundenplan/woche%.tex
 	$(LATEX) -jobname=stundenplan$* "\newcommand{\woche}{$*} \input{stundenplan.tex}"
 	convert -density 300 stundenplan$*.pdf stundenplan$*.png
 
-%.tex: %.dokuwiki
-	scripts/dokuwiki_table_to_tex.sh $^ $@
+%.tex: %.dokuwiki scripts/dokuwiki_table_to_tex.sh
+	scripts/dokuwiki_table_to_tex.sh $< $@
 
 clean:
 	git clean -fdX
